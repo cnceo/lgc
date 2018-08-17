@@ -22,6 +22,9 @@
 
 </head>
 <body>
+<div class="gonggao" style="width:100%;background-color: #ebebeb;">
+	<iframe src="http://api.338p.com/cp_newshow/liuhecai.php?u=<?php echo ($BaseUrl); ?>" width="100%" height="30" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+</div>
 	<!-- 头部 -->
     
 <div class="header-plus">
@@ -45,16 +48,25 @@
     <script src="js/jquery.SuperSlide.2.1.1.js"></script>
 	<script src="css/nva-plus.css"></script>
         <div class="header-navbar-plus">
-    <div class="w1030 clearfix">
+    <div class="w1030 clearfix"style="background-color: #ff7b00">
         <ul class="nav-plus clearfix">
             <li><a href="<?php echo ($BaseUrl); ?>">网站首页</a></li>
+            <li class="dropdown-nav">
+                <a href="javascript://" class="dropdown-desc">彩票大厅<img src="/images/cpdt_red.png"><i class="icon"></i></a>
+                <ul class="dropdown-ul" style="display: none;">
+                    <li><a href="<?php echo ($BaseUrl); ?>gd11x5/">广东11选5</a></li>
+                    <li><a href="<?php echo ($BaseUrl); ?>jsk3/">江苏快三</a></li>
+                    <li><a href="<?php echo ($BaseUrl); ?>kl8/">北京快乐8</a></li>
+                    <li><a href="<?php echo ($BaseUrl); ?>shssl/">上海时时乐</a></li>
+                </ul>
+            </li>
             <li><a href="<?php echo ($BaseUrl); ?>pk10/">北京赛车pk10</a></li>
 			<li><a href="<?php echo ($BaseUrl); ?>xyft/">幸运飞艇</a></li>
 			<li><a href="<?php echo ($BaseUrl); ?>cqssc/">重庆时时彩</a></li>
 			<li><a href="<?php echo ($BaseUrl); ?>xjssc/">新疆时时彩</a></li>
 			<li><a href="<?php echo ($BaseUrl); ?>tjssc/">天津时时彩</a></li>
 			<li><a href="<?php echo ($BaseUrl); ?>gdkl10/">广东快乐十分</a></li>
-			<li><a href="<?php echo ($BaseUrl); ?>xync/">幸运农场</a></li>			
+			<!--<li><a href="<?php echo ($BaseUrl); ?>xync/">幸运农场</a></li>			-->
 		    <li class="dropdown-nav">
                 <a href="javascript://" class="dropdown-desc">更多彩种<i class="icon"></i></a>
                 <ul class="dropdown-ul" style="display: none;">
@@ -62,6 +74,7 @@
 					<li><a href="<?php echo ($BaseUrl); ?>jsk3/">江苏快三</a></li>
 					<li><a href="<?php echo ($BaseUrl); ?>kl8/">北京快乐8</a></li>
 					<li><a href="<?php echo ($BaseUrl); ?>shssl/">上海时时乐</a></li>
+                    <li><a href="<?php echo ($BaseUrl); ?>xync/">幸运农场</a></li>
                 </ul>
             </li>
 			
@@ -106,6 +119,7 @@ jQuery(".nav-plus").slide({ type:"menu", titCell:".dropdown-nav", targetCell:".d
 <div class="body-content">
 	<!-- 彩票大厅 头部 -->
 <div>
+
     <div class="business" style='display:<?php if(empty($WEB_SITE_AD_TOP1_PIC)): ?>none<?php else: ?>block<?php endif; ?>'>
         <a href="<?php echo C('WEB_SITE_AD_TOP1_LINK');?>" target='_blank' rel="nofollow">
             <img src="<?php echo C('WEB_SITE_AD_TOP1_PIC');?>"  />
@@ -123,6 +137,7 @@ jQuery(".nav-plus").slide({ type:"menu", titCell:".dropdown-nav", targetCell:".d
     </div>
     <div class="business" style='display:<?php if(empty($WEB_SITE_AD_TOP4_PIC)): ?>none<?php else: ?>block<?php endif; ?>'>
         <a href="<?php echo C('WEB_SITE_AD_TOP4_LINK');?>"  target='_blank' rel="nofollow">
+
             <img src="<?php echo C('WEB_SITE_AD_TOP4_PIC');?>"  />
         </a>
     </div>
