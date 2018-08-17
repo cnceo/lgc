@@ -58,16 +58,16 @@
                     <li><a href="<?php echo ($BaseUrl); ?>jsk3/">江苏快三</a></li>
                     <li><a href="<?php echo ($BaseUrl); ?>kl8/">北京快乐8</a></li>
                     <li><a href="<?php echo ($BaseUrl); ?>shssl/">上海时时乐</a></li>
-                    <li><a href="<?php echo ($BaseUrl); ?>xync/">幸运农场</a></li>
+                    <li><a href="<?php echo ($BaseUrl); ?>xync/">加拿大28</a></li>
                 </ul>
             </li>
             <li><a href="<?php echo ($BaseUrl); ?>pk10/">北京赛车pk10</a></li>
 			<li><a href="<?php echo ($BaseUrl); ?>xyft/">幸运飞艇</a></li>
 			<li><a href="<?php echo ($BaseUrl); ?>cqssc/">重庆时时彩</a></li>
-			<li><a href="<?php echo ($BaseUrl); ?>xjssc/">新疆时时彩</a></li>
+			<li><a href="<?php echo ($BaseUrl); ?>xjssc/">极速赛车</a></li>
 			<li><a href="<?php echo ($BaseUrl); ?>tjssc/">天津时时彩</a></li>
 			<li><a href="<?php echo ($BaseUrl); ?>gdkl10/">广东快乐十分</a></li>
-			<li><a href="<?php echo ($BaseUrl); ?>xync/">幸运农场</a></li>
+			<li><a href="<?php echo ($BaseUrl); ?>xync/">加拿大28</a></li>
 
 <!--		    <li class="dropdown-nav">
                 <a href="javascript://" class="dropdown-desc">更多彩种<i class="icon"></i></a>
@@ -199,7 +199,7 @@ jQuery(".nav-plus").slide({ type:"menu", titCell:".dropdown-nav", targetCell:".d
 	  
 	  <div style='clear:both'></div>
 <div class="tabbox">
-        <div class="tab"> <a href="/pk10" class="on">北京赛车</a> <a href="/cqssc" class="">重庆时时彩</a> <a href="/gdkl10" class="">广东快乐十分</a> <a href="/xync">幸运农场</a> <a href="/gd11x5">广东11选5</a> </div>
+        <div class="tab"> <a href="/pk10" class="on">北京赛车</a> <a href="/cqssc" class="">重庆时时彩</a> <a href="/gdkl10" class="">广东快乐十分</a> <a href="/xync">加拿大28</a> <a href="/gd11x5">广东11选5</a> </div>
         <div class="content">
           <ul>
             <li style="display: block;">
@@ -406,8 +406,8 @@ $(function(){
                     <li><a href="/xyft/"><em class="xyft-icon"></em>幸运飞艇</a><span id="xyft-timeqihaob"></span></li>
                     <li><a href="/cqssc/"><em class="cqssc-icon"></em>重庆时时彩 </a><span id="cqssc-timeqihaob"></span></li>
                     <li><a href="/gdkl10/"><em class="gdkl10-icon"></em>广东快乐十分 </a><span id="gdkl10-timeqihaob"></span></li>
-                    <li><a href="/xync/"><em class="xync-icon"></em>幸运农场 </a><span id="xync-timeqihaob"></span></li>
-                    <li><a href="/xjssc/"><em class="xjssc-icon"></em>新疆时时彩</a> <span id="xjssc-timeqihaob"></span></li>
+                    <li><a href="/xync/"><em class="xync-icon"></em>加拿大28 </a><span id="xync-timeqihaob"></span></li>
+                    <li><a href="/xjssc/"><em class="xjssc-icon"></em>加拿大28</a> <span id="xjssc-timeqihaob"></span></li>
                     <li><a href="/tjssc/"><em class="tjssc-icon"></em>天津时时彩 </a><span id="tjssc-timeqihaob"></span></li>
                     <li><a href="/gd11x5/"><em class="gd11x5-icon"></em>广东11选5 </a><span id="gd11x5-timeqihaob"></span></li>
                     <li><a href="/jsk3/"><em class="jsk3-icon"></em>江苏快三 </a><span id="jsk3-timeqihaob"></span></li>
@@ -444,11 +444,11 @@ $(function(){
           </li>
           <li>
             <div class="pic"><a href="/xync/shipin" target="_blank"><img src="/style/images/xyncv.jpg"></a><p><b id="bxync-time"></b>秒后直播</p></div>
-          <p><a href="/xync/shipin" target="_blank">幸运农场</a></p>
+          <p><a href="/xync/shipin" target="_blank">加拿大28</a></p>
           </li>
           <li>
             <div class="pic"><a href="/xjssc/shipin" target="_blank"><img src="/style/images/xjsscv.jpg"></a><p><b id="bxjssc-time"></b>秒后直播</p></div>
-           <p><a href="/xjssc/shipin" target="_blank">新疆时时彩</a></p>
+           <p><a href="/xjssc/shipin" target="_blank">极速赛车</a></p>
           </li>
           <li>
             <div class="pic"><a href="/tjssc/shipin" target="_blank"><img src="/style/images/tjsscv.jpg"></a><p><b id="btjssc-time"></b>秒后直播</p></div>
@@ -677,7 +677,7 @@ $(function(){
                     </div>
                 </li><?php endforeach; endif; else: echo "" ;endif; ?> 
  </ul>
-			<h3><em></em>幸运农场开奖号码</h3>
+			<h3><em></em>加拿大28开奖号码</h3>
 			<ul>
 			<?php if(is_array($list_xync)): $i = 0; $__LIST__ = $list_xync;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><li>
                     <div class="openinfo"><span class="fl">第<?php echo ($data["dat_expect"]); ?>期</span> <span class="fr">
@@ -696,7 +696,7 @@ $(function(){
                     </div>
                 </li><?php endforeach; endif; else: echo "" ;endif; ?> 
  </ul>
-			<h3><em></em>新疆时时彩开奖号码</h3>
+			<h3><em></em>极速赛车开奖号码</h3>
 			<ul>
 			<?php if(is_array($list_xjssc)): $i = 0; $__LIST__ = $list_xjssc;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><li>
                     <div class="openinfo"><span class="fl">第<?php echo ($data["dat_expect"]); ?>期</span> <span class="fr">
