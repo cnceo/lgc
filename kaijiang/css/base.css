@@ -108,13 +108,20 @@ input{display: inline-block;border:none;}
 }
 .icon{background: url(/style/images/neiye.png);_background: url(/style/images/neiye.png.gif);display: inline-block;}
 /*导航*/
-.header-navbar-plus{width:100%;height:46px;line-height: 46px;background: #4f4b59;font-family: "Microsoft Yahei"; border-top:4px solid #e63442}
+.header-navbar-plus {
+    width: 100%;
+    height: 46px;
+    line-height: 46px;
+    background:#ff7b00;
+    font-family: "Microsoft Yahei";
+    /*border-top:4px solid #eb7100}*/
+}
 .nav-plus{float:left;}
 .nav-plus li{float:left;font-size:16px;color:#fff;font-weight: normal; }
 
 .nav-plus li a:link,.nav-plus li a:visited{color:#fff;display: inline-block;float:left; width:114px;text-align:center}
 .nav-plus li a:hover{color:#fff;background: #e63442;text-decoration: none}
-.nav-plus li.on{background: #e63442;}
+.nav-plus li.on{background: #eb7100 ;}
 .header-navbar-plus .dropdown-nav{position: relative;z-index:999;}
 .nav-plus li a.dropdown-desc:link,.nav-plus li a.dropdown-desc:visited{display:block}
 .nav-plus li a.dropdown-desc:hover i{-webkit-transition: -webkit-transform .2s ease-in;

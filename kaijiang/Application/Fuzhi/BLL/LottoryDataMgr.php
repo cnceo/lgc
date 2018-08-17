@@ -128,8 +128,9 @@ class LottoryDataMgr
                 $ret = $this->getNumberTrendData($type, $page, $lotType, $expire);
             } else {
                 if ($page == 'getPk10AwardData.do' || $page == 'getPk10AwardTimes.do' || $page == 'getCqsscAwardData.do' || $page == 'getCqsscAwardTimes.do' || $page == 'getGdkl10AwardData.do' || $page == 'getGdkl10AwardTimes.do' || $page == 'getJsk3AwardData.do' || $page == 'getJsk3AwardTimes.do' || $page == 'gettjsscAwardData.do' || $page == 'getxjsscAwardData.do' || $page == 'getfc3dAwardData.do'  || $page == 'getpl3AwardData.do' || $page == 'getgd11x5AwardData.do' || $page == 'gettjsscAwardTimes.do' || $page == 'getpl3AwardTimes.do' || $page == 'getfc3dcAwardTimes.do' || $page == 'getxjsscAwardTimes.do' || $page == 'getShsslAwardData.do' || $page == 'getShsslAwardTimes.do' || $page == 'getXyncAwardData.do' || $page == 'getXyncAwardTimes.do' || $page == 'getkl8AwardData.do' || $page == 'getkl8AwardTimes.do') {
-					    //die("s");
+					//die("s");
                     $ret = $this->getAwardTime($type, $page, $lotType, $expire);
+					//var_dump($ret);die;
                 } else {
                     if ($page == "GetPk10AnalysisData") {
                         $ret = $this->getPk10AnalysisData($type, $page, $lotType, $expire);
@@ -214,7 +215,6 @@ class LottoryDataMgr
         if ($ret === false) {
             if ($type == 'pk10') {
                 $ret = $this->getPk10Data($type, $page, $param);
-
             } else {
                 if ($type == 'cqssc') {
                     $ret = $this->getcqsscData($type, $page, $param);
@@ -461,7 +461,6 @@ class LottoryDataMgr
     }
     private function getAwardTime($type, $page, $lotType, $expire)
     {
-        //print_r($expire);print_r($lotType);exit;
         $module = M();
         $retData = array();
         $time = time();
@@ -469,12 +468,11 @@ class LottoryDataMgr
         $kjHao = null;
         if (substr($page, -7) == "Data.do") {
             $kjHao = $module->query("select dat_codes,replace(dat_expect,'-','') dat_expect, dat_open_time from {$this->prename}data where dat_type={$lotType} order by dat_expect desc limit 1");
-
+			
             $time = $kjHao[0]['dat_open_time'];
             $currentNo = $this->getGameCurrentNo($lotType, $module, $time);
-			//var_dump($lotType, $time);die;
+			//var_dump($currentNo);die;
             $nextNo = $this->getGameNextNo($lotType, $module, $time);
-
         } else {
             $currentNo = $this->getGameCurrentNo($lotType, $module, $time);
 			//dump($lotType);die;
@@ -484,6 +482,7 @@ class LottoryDataMgr
 			if(!is_array($kjHao) || !$kjHao['dat_codes']){
 				$kjHao = $module->query("select dat_codes from {$this->prename}data where dat_type={$lotType} order by dat_id desc limit 1");
 			}
+
         }
         $pan = null;
         if ($kjHao === false || count($kjHao) == 0) {

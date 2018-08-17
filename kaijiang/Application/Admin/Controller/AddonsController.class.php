@@ -1,44 +1,22 @@
 <?php
- namespace Admin\Controller;
- class AddonsController extends AdminController {
-     public function _initialize(){
-         $this->assign('_extra_menu',array( '已装插件后台'=> D('Addons')->getAdminList(), ));
-         parent::_initialize();
-     }
-     public function create(){
-         if(!is_writable(ONETHINK_ADDON_PATH)) $this->error('您没有创建目录写入权限，无法使用此功能');
-         $hooks = M('Hooks')->field('name,description')->select();
-         $this->assign('Hooks',$hooks);
-         $this->meta_title = '创建向导'; $this->display('create');
-     }
-     public function preview($output = true){
-         $data = $_POST; $data['info']['status'] = (int)$data['info']['status'];
-         $extend = array(); $custom_config = trim($data['custom_config']);
-         if($data['has_config'] && $custom_config){
-             $custom_config = <<<str
+ namespace Admin\Controller; class AddonsController extends AdminController { public function _initialize(){ $this->assign('_extra_menu',array( '已装插件后台'=> D('Addons')->getAdminList(), )); parent::_initialize(); } public function create(){ if(!is_writable(ONETHINK_ADDON_PATH)) $this->error('您没有创建目录写入权限，无法使用此功能'); $hooks = M('Hooks')->field('name,description')->select(); $this->assign('Hooks',$hooks); $this->meta_title = '创建向导'; $this->display('create'); } public function preview($output = true){ $data = $_POST; $data['info']['status'] = (int)$data['info']['status']; $extend = array(); $custom_config = trim($data['custom_config']); if($data['has_config'] && $custom_config){ $custom_config = <<<str
 
-strpublic;
-public \$custom_config = '{$custom_config}';
+
+        public \$custom_config = '{$custom_config}';
 str;
-$extend[] = $custom_config;
-         }
-         $admin_list = trim($data['admin_list']); if($data['has_adminlist'] && $admin_list){
-             $admin_list = <<<str
+$extend[] = $custom_config; } $admin_list = trim($data['admin_list']); if($data['has_adminlist'] && $admin_list){ $admin_list = <<<str
+
+
         public \$admin_list = array(
             {$admin_list}
         );
 str;
-$extend[] = $admin_list;
-         }
-         $custom_adminlist = trim($data['custom_adminlist']);
-         if($data['has_adminlist'] && $custom_adminlist){
-             $custom_adminlist = <<<str
+$extend[] = $admin_list; } $custom_adminlist = trim($data['custom_adminlist']); if($data['has_adminlist'] && $custom_adminlist){ $custom_adminlist = <<<str
+
+
         public \$custom_adminlist = '{$custom_adminlist}';
 str;
-$extend[] = $custom_adminlist;
-         }
-         $extend = implode('', $extend); $hook = ''; foreach ($data['hook'] as $value) {
-             $hook .= <<<str
+$extend[] = $custom_adminlist; } $extend = implode('', $extend); $hook = ''; foreach ($data['hook'] as $value) { $hook .= <<<str
         //实现的{$value}钩子方法
         public function {$value}(\$param){
 
