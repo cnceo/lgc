@@ -121,6 +121,7 @@ input{display: inline-block;border:none;}
 
 .nav-plus li a:link,.nav-plus li a:visited{color:#fff;display: inline-block;float:left; width:114px;text-align:center}
 .nav-plus li a:hover{color:#fff;background: #e63442;text-decoration: none}
+#lottery_hall a:hover{color:#e63442;background: #fff;text-decoration: none}
 .nav-plus li.on{background: #eb7100 ;}
 .header-navbar-plus .dropdown-nav{position: relative;z-index:999;}
 .nav-plus li a.dropdown-desc:link,.nav-plus li a.dropdown-desc:visited{display:block}

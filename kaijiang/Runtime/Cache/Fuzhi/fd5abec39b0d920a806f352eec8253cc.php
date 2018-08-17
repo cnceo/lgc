@@ -47,16 +47,18 @@
     <script src="js/jquery.SuperSlide.2.1.1.js"></script>
 	<script src="css/nva-plus.css"></script>
         <div class="header-navbar-plus">
-    <div class="w1030 clearfix"style="background-color: #ff7b00">
+            <!--style="background-color: #ff7b00-->
+    <div class="w1030 clearfix">
         <ul class="nav-plus clearfix">
             <li><a href="<?php echo ($BaseUrl); ?>">网站首页</a></li>
-            <li class="dropdown-nav">
-                <a href="javascript://" class="dropdown-desc">彩票大厅<img src="/images/cpdt_red.png"><i class="icon"></i></a>
+            <li class="dropdown-nav" id="lottery_hall">
+                <a href="javascript://" class="dropdown-desc">彩票大厅<img src="/images/cpdt_white.png"><i class="icon"></i></a>
                 <ul class="dropdown-ul" style="display: none;">
                     <li><a href="<?php echo ($BaseUrl); ?>gd11x5/">广东11选5</a></li>
                     <li><a href="<?php echo ($BaseUrl); ?>jsk3/">江苏快三</a></li>
                     <li><a href="<?php echo ($BaseUrl); ?>kl8/">北京快乐8</a></li>
                     <li><a href="<?php echo ($BaseUrl); ?>shssl/">上海时时乐</a></li>
+                    <li><a href="<?php echo ($BaseUrl); ?>xync/">幸运农场</a></li>
                 </ul>
             </li>
             <li><a href="<?php echo ($BaseUrl); ?>pk10/">北京赛车pk10</a></li>
@@ -65,8 +67,9 @@
 			<li><a href="<?php echo ($BaseUrl); ?>xjssc/">新疆时时彩</a></li>
 			<li><a href="<?php echo ($BaseUrl); ?>tjssc/">天津时时彩</a></li>
 			<li><a href="<?php echo ($BaseUrl); ?>gdkl10/">广东快乐十分</a></li>
-			<!--<li><a href="<?php echo ($BaseUrl); ?>xync/">幸运农场</a></li>			-->
-		    <li class="dropdown-nav">
+			<li><a href="<?php echo ($BaseUrl); ?>xync/">幸运农场</a></li>
+
+<!--		    <li class="dropdown-nav">
                 <a href="javascript://" class="dropdown-desc">更多彩种<i class="icon"></i></a>
                 <ul class="dropdown-ul" style="display: none;">
 					<li><a href="<?php echo ($BaseUrl); ?>gd11x5/">广东11选5</a></li>
@@ -75,15 +78,23 @@
 					<li><a href="<?php echo ($BaseUrl); ?>shssl/">上海时时乐</a></li>
                     <li><a href="<?php echo ($BaseUrl); ?>xync/">幸运农场</a></li>
                 </ul>
-            </li>
-			
+            </li>-->
         </ul>
 
     </div>
 </div>
-  
+
 </div>
+<!--彩票大厅样式变化-->
  <script type="text/javascript">
+     $('#lottery_hall').mouseenter(function(){
+         $('#lottery_hall img').attr('src','/images/cpdt_red.png')
+
+     });
+     $('#lottery_hall').mouseleave(function(){
+
+         $('#lottery_hall img').attr('src','/images/cpdt_white.png')
+     });
 
 var pathname = window.location.pathname;
 if (pathname.indexOf("pk10") >= 0){
@@ -117,6 +128,7 @@ jQuery(".nav-plus").slide({ type:"menu", titCell:".dropdown-nav", targetCell:".d
 
     <!--body-content-->
 <div class="body-content">
+
         <div>
 
     <div class="business" style='display:<?php if(empty($WEB_SITE_AD_TOP1_PIC)): ?>none<?php else: ?>block<?php endif; ?>'>
@@ -145,7 +157,7 @@ jQuery(".nav-plus").slide({ type:"menu", titCell:".dropdown-nav", targetCell:".d
 		<div style=" margin-top: 10px;">
 
 	<div class="lot-menu">
-	
+
 	<div class="game_list">
         <ul>
           <li><a href="/pk10"><em class="pk10-icon"></em>北京赛车  </a> <span id="pk10-timeqihaob"></span></li>
@@ -163,12 +175,12 @@ jQuery(".nav-plus").slide({ type:"menu", titCell:".dropdown-nav", targetCell:".d
 
 		<!--banner-->
 
-<div class="index_left_ad"><a href="m" target="_blank"><img alt="手机pk10开奖直播" src="/style/images/mobile2.gif"></a></div>	
+        <div class="index_left_ad"><a href="m" target="_blank"><img alt="手机pk10开奖直播" src="/style/images/mobile2.gif"></a></div>
 
-	</div> 
-		</div>	
+	</div>
+		</div>
 		
-			<div class="banner">
+<div class="banner">
 	
 	<div class="ck-slide">
         <ul class="ck-slide-wrapper">
@@ -192,7 +204,7 @@ jQuery(".nav-plus").slide({ type:"menu", titCell:".dropdown-nav", targetCell:".d
           </div>
         </div>
       </div>
-	
+
 	<script src="/style/js/slide.js"></script>
 <script>
 
