@@ -312,7 +312,7 @@
     background-position: -81px -97px;
 }
 .software {
-    float: right;
+    float: left;
     width: 243px;
 }
 .software .soft {
@@ -1073,7 +1073,7 @@ a:hover {
 	border:1px solid #ddd;
 	width:264px;
 	background:#f9f9f9;
-	margin-bottom:5px;
+	margin-bottom:px;
 }
 .game_list ul {
 }
@@ -1323,7 +1323,7 @@ height:25px; line-height:25px;
 	width:470px;
 	border:1px solid #dedede;
 	overflow:hidden;
-	height:167px;
+	height:210px;
 
 }
 .tabbox .tab {
@@ -1369,7 +1369,7 @@ height:25px; line-height:25px;
 	overflow:hidden;
 	width:470px;
 	margin-top:15px;
-	height:55px;
+	height:100px;
 	text-align:center;
 	line-height:55px
 }
@@ -1623,7 +1623,8 @@ transition: opacity .2s linear 0s;
 .index_left_ad {
 	width:266px;
 	overflow:hidden;
-	margin-top:4px;height:60px;
+	/*margin-top:4px;*/
+    height:60px;
 	
 }
 .index_left_ad  img{width:266px;height:65px}
