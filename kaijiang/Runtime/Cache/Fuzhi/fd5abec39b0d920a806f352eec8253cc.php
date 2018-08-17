@@ -407,7 +407,7 @@ $(function(){
                     <li><a href="/cqssc/"><em class="cqssc-icon"></em>重庆时时彩 </a><span id="cqssc-timeqihaob"></span></li>
                     <li><a href="/gdkl10/"><em class="gdkl10-icon"></em>广东快乐十分 </a><span id="gdkl10-timeqihaob"></span></li>
                     <li><a href="/xync/"><em class="xync-icon"></em>加拿大28 </a><span id="xync-timeqihaob"></span></li>
-                    <li><a href="/xjssc/"><em class="xjssc-icon"></em>加拿大28</a> <span id="xjssc-timeqihaob"></span></li>
+                    <li><a href="/xjssc/"><em class="xjssc-icon"></em>极速赛车</a> <span id="xjssc-timeqihaob"></span></li>
                     <li><a href="/tjssc/"><em class="tjssc-icon"></em>天津时时彩 </a><span id="tjssc-timeqihaob"></span></li>
                     <li><a href="/gd11x5/"><em class="gd11x5-icon"></em>广东11选5 </a><span id="gd11x5-timeqihaob"></span></li>
                     <li><a href="/jsk3/"><em class="jsk3-icon"></em>江苏快三 </a><span id="jsk3-timeqihaob"></span></li>
