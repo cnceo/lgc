@@ -72,7 +72,7 @@ $.getJSON("/pk10/getPk10AwardTimes.do",
 
  $("#gdkl10").html(codenum);
  });
- $.getJSON("/xync/getPk10AwardTimes.do",
+ $.getJSON("/jssc/getPk10AwardTimes.do",
  function(data){
  $("#xync-timeqihaob").html("第"+data.next.periodNumber+"期");
  $("#xyncperiod").html(data.current.periodNumber);
@@ -91,7 +91,7 @@ $.getJSON("/pk10/getPk10AwardTimes.do",
 
  $("#xync").html(codenum);
  });
- $.getJSON("/xjssc/getPk10AwardTimes.do",
+ $.getJSON("/jsssc/getPk10AwardTimes.do",
  function(data){
  $("#xjssc-timeqihaob").html("第"+data.next.periodNumber+"期");
  timers(parseInt((data.next.awardTimeInterval)/1000),"bxjssc-time");

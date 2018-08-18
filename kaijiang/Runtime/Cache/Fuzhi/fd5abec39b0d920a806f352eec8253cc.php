@@ -206,7 +206,7 @@ jQuery(".nav-plus").slide({ type:"menu", titCell:".dropdown-nav", targetCell:".d
 	  
 	  <div style='clear:both'></div>
 <div class="tabbox">
-        <div class="tab"> <a href="/pk10" class="on">北京赛车</a> <a href="/cqssc" class="">重庆时时彩</a> <a href="/gdkl10" class="">广东快乐十分</a> <a href="/xync">加拿大28</a> <a href="/gd11x5">广东11选5</a> </div>
+        <div class="tab"> <a href="/pk10" class="on">北京赛车</a> <a href="/cqssc" class="">重庆时时彩</a> <a href="/gdkl10" class="">广东快乐十分</a> <a href="#">加拿大28</a> <a href="/gd11x5">广东11选5</a> </div>
         <div class="content">
           <ul>
             <li style="display: block;">
@@ -413,7 +413,7 @@ $(function(){
                     <li><a href="/xyft/"><em class="xyft-icon"></em>幸运飞艇</a><span id="xyft-timeqihaob"></span></li>
                     <li><a href="/cqssc/"><em class="cqssc-icon"></em>重庆时时彩 </a><span id="cqssc-timeqihaob"></span></li>
                     <li><a href="/gdkl10/"><em class="gdkl10-icon"></em>广东快乐十分 </a><span id="gdkl10-timeqihaob"></span></li>
-                    <li><a  href="#" id="pc28"><em class="xync-icon"></em>加拿大28 </a><span id="xync-timeqihaob"></span></li>
+                    <li><a  href="jssc"><em class="xync-icon"></em>極速賽車 </a><span id="xync-timeqihaob"></span></li>
                     <li><a href="/jsssc/"><em class="jsssc-icon"></em>极速时时彩</a> <span id="xjssc-timeqihaob"></span></li>
                     <li><a href="/tjssc/"><em class="tjssc-icon"></em>天津时时彩 </a><span id="tjssc-timeqihaob"></span></li>
                     <li><a href="/gd11x5/"><em class="gd11x5-icon"></em>广东11选5 </a><span id="gd11x5-timeqihaob"></span></li>
