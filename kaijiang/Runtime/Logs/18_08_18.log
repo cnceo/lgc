@@ -1,0 +1,53 @@
+[ 2018-08-18T18:47:22+08:00 ] 127.0.0.1 /cqssc/getPk10AwardTimes.do
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000607s ]
+NOTIC: [2] Declaration of Fuzhi\Controller\EmptyController::_empty($name) should be compatible with Fuzhi\Controller\HomeController::_empty() C:\lgc\kaijiang\Application\Fuzhi\Controller\EmptyController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `ot_config` [ RunTime:0.004430s ]
+SQL: SELECT `type`,`name`,`value` FROM `ot_config` WHERE ( `status` = 1 )  [ RunTime:0.000225s ]
+SQL: select * from lot_type where isDelete=0 order by sort asc [ RunTime:0.000287s ]
+SQL: select actionNo, actionTime from lot_data_time where type=1 and actionTime<='18:47:52' order by actionTime desc limit 1 [ RunTime:0.000330s ]
+SQL: select actionNo, actionTime from lot_data_time where type=1 and actionTime>'18:47:52' order by actionTime limit 1 [ RunTime:0.000318s ]
+SQL: select dat_codes from lot_data where dat_type=1 and dat_expect='20180818-076' [ RunTime:0.000167s ]
+NOTIC: [8] Undefined index: dat_codes C:\lgc\kaijiang\Application\Fuzhi\BLL\LottoryDataMgr.php 第 488 行.
+SQL: select dat_codes from lot_data where dat_type=1 order by dat_id desc limit 1 [ RunTime:0.000163s ]
+NOTIC: [8] A non well formed numeric value encountered C:\lgc\kaijiang\Application\Fuzhi\BLL\LottoryDataMgr.php 第 516 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000453s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000470s ]
+
+[ 2018-08-18T18:47:23+08:00 ] 127.0.0.1 /gdkl10/getPk10AwardTimes.do
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000723s ]
+NOTIC: [2] Declaration of Fuzhi\Controller\EmptyController::_empty($name) should be compatible with Fuzhi\Controller\HomeController::_empty() C:\lgc\kaijiang\Application\Fuzhi\Controller\EmptyController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `ot_config` [ RunTime:0.005378s ]
+SQL: SELECT `type`,`name`,`value` FROM `ot_config` WHERE ( `status` = 1 )  [ RunTime:0.000234s ]
+SQL: select * from lot_type where isDelete=0 order by sort asc [ RunTime:0.000286s ]
+SQL: select actionNo, actionTime from lot_data_time where type=21 and actionTime<='18:47:53' order by actionTime desc limit 1 [ RunTime:0.000285s ]
+SQL: select actionNo, actionTime from lot_data_time where type=21 and actionTime>'18:47:53' order by actionTime limit 1 [ RunTime:0.000280s ]
+SQL: select dat_codes from lot_data where dat_type=21 and dat_expect='20180818-58' [ RunTime:0.000170s ]
+NOTIC: [8] Undefined index: dat_codes C:\lgc\kaijiang\Application\Fuzhi\BLL\LottoryDataMgr.php 第 488 行.
+SQL: select dat_codes from lot_data where dat_type=21 order by dat_id desc limit 1 [ RunTime:0.000159s ]
+NOTIC: [8] A non well formed numeric value encountered C:\lgc\kaijiang\Application\Fuzhi\BLL\LottoryDataMgr.php 第 516 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000446s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000463s ]
+
+[ 2018-08-18T18:47:24+08:00 ] 127.0.0.1 /jssc/getPk10AwardTimes.do
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000695s ]
+NOTIC: [2] Declaration of Fuzhi\Controller\EmptyController::_empty($name) should be compatible with Fuzhi\Controller\HomeController::_empty() C:\lgc\kaijiang\Application\Fuzhi\Controller\EmptyController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `ot_config` [ RunTime:0.004701s ]
+SQL: SELECT `type`,`name`,`value` FROM `ot_config` WHERE ( `status` = 1 )  [ RunTime:0.000249s ]
+SQL: select * from lot_type where isDelete=0 order by sort asc [ RunTime:0.000261s ]
+SQL: select actionNo, actionTime from lot_data_time where type=39 and actionTime<='18:47:54' order by actionTime desc limit 1 [ RunTime:0.000360s ]
+SQL: select actionNo, actionTime from lot_data_time where type=39 and actionTime>'18:47:54' order by actionTime limit 1 [ RunTime:0.000307s ]
+SQL: select dat_codes from lot_data where dat_type=39 and dat_expect='701604' [ RunTime:0.000131s ]
+NOTIC: [8] Undefined index: dat_codes C:\lgc\kaijiang\Application\Fuzhi\BLL\LottoryDataMgr.php 第 488 行.
+SQL: select dat_codes from lot_data where dat_type=39 order by dat_id desc limit 1 [ RunTime:0.000124s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000437s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000453s ]
+
