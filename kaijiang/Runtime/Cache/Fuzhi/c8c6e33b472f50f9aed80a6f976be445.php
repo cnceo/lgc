@@ -59,16 +59,18 @@
                     <li><a href="<?php echo ($BaseUrl); ?>jsk3/">江苏快三</a></li>
                     <li><a href="<?php echo ($BaseUrl); ?>kl8/">北京快乐8</a></li>
                     <li><a href="<?php echo ($BaseUrl); ?>shssl/">上海时时乐</a></li>
-                    <li><a href="<?php echo ($BaseUrl); ?>xync/">加拿大28</a></li>
+                    <li><a href="#" id="bjft">北京番攤</a></li>
+                    <li><a href="#" id="cqft">重慶番攤</a></li>
+
                 </ul>
             </li>
             <li><a href="<?php echo ($BaseUrl); ?>pk10/">北京赛车pk10</a></li>
 			<li><a href="<?php echo ($BaseUrl); ?>xyft/">幸运飞艇</a></li>
 			<li><a href="<?php echo ($BaseUrl); ?>cqssc/">重庆时时彩</a></li>
-			<li><a href="<?php echo ($BaseUrl); ?>xjssc/">极速时时彩</a></li>
+			<li><a href="<?php echo ($BaseUrl); ?>jsssc/">极速时时彩</a></li>
 			<li><a href="<?php echo ($BaseUrl); ?>tjssc/">天津时时彩</a></li>
 			<li><a href="<?php echo ($BaseUrl); ?>gdkl10/">广东快乐十分</a></li>
-			<li><a href="<?php echo ($BaseUrl); ?>xync/">加拿大28</a></li>
+            <li><a href="#" id="ps28">加拿大28</a></li>
 
 <!--		    <li class="dropdown-nav">
                 <a href="javascript://" class="dropdown-desc">更多彩种<i class="icon"></i></a>
@@ -88,6 +90,11 @@
 </div>
 <!--彩票大厅样式变化-->
  <script type="text/javascript">
+     $("#ps28").click(function () {
+        alert("敬請期待！");
+        return false;
+     });
+
      $('#lottery_hall').mouseenter(function(){
          $('#lottery_hall img').attr('src','/images/cpdt_red.png')
 
@@ -161,20 +168,20 @@ jQuery(".nav-plus").slide({ type:"menu", titCell:".dropdown-nav", targetCell:".d
     <li><a href="gdkl10/" game="gdkl10">广东快乐十分</a></li>
 	<li><a href="xyft/" game="xyft">幸运飞艇</a></li>
     <li><a href="tjssc/" game="tjssc">天津时时彩</a></li>
-    <li><a href="xync/" game="xync">加拿大28</a></li>
+    <li><a  game="pc28" id="pc28">加拿大28</a></li>
     <li><a href="jsk3/" game="jsk3">江苏快3</a></li>
     <li><a href="shssl/" game="shssl" class="last">上海时时乐</a></li>
 </ul>
 
 <ul class="lot-menu delBottomLine" style="margin-top: 0px;"> 
 <li><a href="gd11x5/" game="gd11x5">广东11选5</a></li>
-    <li><a href="xjssc/" game="xjssc">极速时时彩</a></li>
+    <li><a href="jsssc/" game="jsssc">极速时时彩</a></li>
     <li><a href="kl8/" game="kl8">北京快乐8</a></li>
     <!--<li><a href="fc3d/" game="fc3d">福彩3d</a></li>-->
     <li><a href="pl3/" game="pl3">排列3</a></li>
-    <li><a href="xjssc/" game="xjssc">极速赛车</a></li>
-    <li><a href="xjssc/" game="xjssc">重庆番摊</a></li>
-    <li><a href="xjssc/" game="xjssc">北京番摊</a></li>
+    <li><a href="jssc/" game="jssc">极速赛车</a></li>
+    <li><a game="cqft" id="cqft">重庆番摊</a></li>
+    <li><a  game="bjft" id="bjft">北京番摊</a></li>
 </ul>
 <script type="text/javascript">
 
@@ -193,6 +200,18 @@ jQuery(".nav-plus").slide({ type:"menu", titCell:".dropdown-nav", targetCell:".d
         $('.lot-menu a').removeClass('cur');
         $('[game="'+beforPageJs.gameName+'"]').addClass('cur');
     }
+    $("#pc28").click(function () {
+        alert("敬請期待！");
+        return false;
+    });
+    $("#cqft").click(function () {
+        alert("敬請期待！");
+        return false;
+    });
+    $("#bjft").click(function () {
+        alert("敬請期待！");
+        return false;
+    });
 </script>
 
 <div class=lot-award1>
@@ -294,14 +313,14 @@ pageDjs.djsInit(1418391670978,"2014-12-12 21:41:30",getTableDade);
             gameNameTemp="kl8";
         }else if (pathname.indexOf("/tjssc/") >= 0){
             gameNameTemp="tjssc";
-        }else if (pathname.indexOf("/xync/") >= 0){
-            gameNameTemp="xync";
+        }else if (pathname.indexOf("/jssc/") >= 0){
+            gameNameTemp="jssc";
         }else if (pathname.indexOf("/jsk3/") >= 0){
             gameNameTemp="jsk3";
         }else if (pathname.indexOf("/shssl/") >= 0){
             gameNameTemp="shssl";
-        }else if (pathname.indexOf("/xjssc/") >= 0){
-            gameNameTemp="xjssc";
+        }else if (pathname.indexOf("/jsssc/") >= 0){
+            gameNameTemp="jsssc";
         }else if (pathname.indexOf("/gd11x5/") >= 0){
             gameNameTemp="gd11x5";
         }else if (pathname.indexOf("/xyft/") >= 0){
@@ -313,6 +332,7 @@ pageDjs.djsInit(1418391670978,"2014-12-12 21:41:30",getTableDade);
         }
     }
     var list = webListOP[gameNameTemp];
+ //   console.log(webListOP);
     if (list.length > 0) {
         var html = '';
         for (var i = 0, max = list.length; i < max; i++) {

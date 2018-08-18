@@ -12,11 +12,11 @@ var beforPageJs = {
 				|| pathname.indexOf("/pk10/") >= 0
 				|| pathname.indexOf("/cqssc/") >= 0
 				|| pathname.indexOf("/shssl/") >= 0
-				|| pathname.indexOf("/xjssc/") >= 0
+				|| pathname.indexOf("/jsssc/") >= 0
 				|| pathname.indexOf("/gd11x5/") >= 0
 				|| pathname.indexOf("/xyft/") >= 0
 				|| pathname.indexOf("/fc3d/") >= 0
-				|| pathname.indexOf("/xync/") >= 0
+				|| pathname.indexOf("/jssc/") >= 0
 				|| pathname.indexOf("/pl3/") >= 0) {
             var i = 0;
             if(pathname.split("/")[1] == 'fuzhi')

@@ -65,7 +65,11 @@
             <li><a href="<?php echo ($BaseUrl); ?>pk10/">北京赛车pk10</a></li>
 			<li><a href="<?php echo ($BaseUrl); ?>xyft/">幸运飞艇</a></li>
 			<li><a href="<?php echo ($BaseUrl); ?>cqssc/">重庆时时彩</a></li>
+<<<<<<< HEAD
 			<li><a href="<?php echo ($BaseUrl); ?>xjssc/">极速时时彩</a></li>
+=======
+			<li><a href="<?php echo ($BaseUrl); ?>jsssc/">极速时时彩</a></li>
+>>>>>>> 2a36a477cf5879f452b7ab867ad48db50c6fee2c
 			<li><a href="<?php echo ($BaseUrl); ?>tjssc/">天津时时彩</a></li>
 			<li><a href="<?php echo ($BaseUrl); ?>gdkl10/">广东快乐十分</a></li>
 			<li><a href="<?php echo ($BaseUrl); ?>xync/">加拿大28</a></li>
@@ -161,13 +165,18 @@ jQuery(".nav-plus").slide({ type:"menu", titCell:".dropdown-nav", targetCell:".d
     <li><a href="gdkl10/" game="gdkl10">广东快乐十分</a></li>
 	<li><a href="xyft/" game="xyft">幸运飞艇</a></li>
     <li><a href="tjssc/" game="tjssc">天津时时彩</a></li>
+<<<<<<< HEAD
     <li><a href="xync/" game="xync">加拿大28</a></li>
+=======
+    <li><a  game="pc28" id="pc28">加拿大28</a></li>
+>>>>>>> 2a36a477cf5879f452b7ab867ad48db50c6fee2c
     <li><a href="jsk3/" game="jsk3">江苏快3</a></li>
     <li><a href="shssl/" game="shssl" class="last">上海时时乐</a></li>
 </ul>
 
 <ul class="lot-menu delBottomLine" style="margin-top: 0px;"> 
 <li><a href="gd11x5/" game="gd11x5">广东11选5</a></li>
+<<<<<<< HEAD
     <li><a href="xjssc/" game="xjssc">极速时时彩</a></li>
     <li><a href="kl8/" game="kl8">北京快乐8</a></li>
     <!--<li><a href="fc3d/" game="fc3d">福彩3d</a></li>-->
@@ -175,6 +184,15 @@ jQuery(".nav-plus").slide({ type:"menu", titCell:".dropdown-nav", targetCell:".d
     <li><a href="xjssc/" game="xjssc">极速赛车</a></li>
     <li><a href="xjssc/" game="xjssc">重庆番摊</a></li>
     <li><a href="xjssc/" game="xjssc">北京番摊</a></li>
+=======
+    <li><a href="jsssc/" game="jsssc">极速时时彩</a></li>
+    <li><a href="kl8/" game="kl8">北京快乐8</a></li>
+    <!--<li><a href="fc3d/" game="fc3d">福彩3d</a></li>-->
+    <li><a href="pl3/" game="pl3">排列3</a></li>
+    <li><a href="jssc/" game="jssc">极速赛车</a></li>
+    <li><a game="cqft" id="cqft">重庆番摊</a></li>
+    <li><a  game="bjft" id="bjft">北京番摊</a></li>
+>>>>>>> 2a36a477cf5879f452b7ab867ad48db50c6fee2c
 </ul>
 <script type="text/javascript">
 
@@ -193,6 +211,21 @@ jQuery(".nav-plus").slide({ type:"menu", titCell:".dropdown-nav", targetCell:".d
         $('.lot-menu a').removeClass('cur');
         $('[game="'+beforPageJs.gameName+'"]').addClass('cur');
     }
+<<<<<<< HEAD
+=======
+    $("#pc28").click(function () {
+        alert("敬請期待！");
+        return false;
+    });
+    $("#cqft").click(function () {
+        alert("敬請期待！");
+        return false;
+    });
+    $("#bjft").click(function () {
+        alert("敬請期待！");
+        return false;
+    });
+>>>>>>> 2a36a477cf5879f452b7ab867ad48db50c6fee2c
 </script>
 
 <div class=lot-award1>

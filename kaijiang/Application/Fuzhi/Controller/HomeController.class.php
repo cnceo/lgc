@@ -17,7 +17,9 @@ class HomeController extends Controller
     {
         $config = api('Config/lists');
         C($config);
+
         $this->BaseUrl = baseUrl();
+
         $this->title = C('WEB_SITE_TITLE');
         $this->keyword = C('WEB_SITE_KEYWORD');
         $this->description = C('WEB_SITE_DESCRIPTION');

@@ -9,10 +9,10 @@ if(strpos($self,"xyft")){
 	$web_type = "重庆时时彩";
 }elseif(strpos($self,"gdkl10")){
 	$web_type = "广东快乐十分";
-}elseif(strpos($self,"xync")){
-	$web_type = "幸运农场";
-}elseif(strpos($self,"xjssc")){
-	$web_type = "新疆时时彩";
+}elseif(strpos($self,"jssc")){
+	$web_type = "極速賽車";
+}elseif(strpos($self,"jsssc")){
+	$web_type = "極速时时彩";
 }elseif(strpos($self,"tjssc")){
 	$web_type = "天津时时彩";
 }elseif(strpos($self,"gd11x5")){
