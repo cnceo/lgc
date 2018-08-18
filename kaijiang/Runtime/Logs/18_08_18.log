@@ -8948,3 +8948,315 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTrace [ RunTime:0.000455s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000474s ]
 
+[ 2018-08-18T23:57:47+08:00 ] 127.0.0.1 /pk10/numbertrendData.do?ball=1&count=25&t=0.8656998551446848
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000428s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000673s ]
+NOTIC: [2] Declaration of Fuzhi\Controller\EmptyController::_empty($name) should be compatible with Fuzhi\Controller\HomeController::_empty() C:\lgc\kaijiang\Application\Fuzhi\Controller\EmptyController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `ot_config` [ RunTime:0.003319s ]
+SQL: SELECT `type`,`name`,`value` FROM `ot_config` WHERE ( `status` = 1 )  [ RunTime:0.000230s ]
+SQL: select replace(dat_expect,'-','') dat_expect,dat_codes,dat_open_time from lot_data where dat_type=20 order by dat_expect desc limit 25 [ RunTime:0.000189s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000586s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000605s ]
+
+[ 2018-08-18T23:57:48+08:00 ] 127.0.0.1 /pk10/getHistoryData.do?count=16&t=0.9084907936801312
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000616s ]
+NOTIC: [2] Declaration of Fuzhi\Controller\EmptyController::_empty($name) should be compatible with Fuzhi\Controller\HomeController::_empty() C:\lgc\kaijiang\Application\Fuzhi\Controller\EmptyController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `ot_config` [ RunTime:0.004469s ]
+SQL: SELECT `type`,`name`,`value` FROM `ot_config` WHERE ( `status` = 1 )  [ RunTime:0.000235s ]
+SQL: select replace(dat_expect,'-','') dat_expect,dat_codes,dat_open_time from lot_data where dat_type=20 order by dat_expect desc limit 16 [ RunTime:0.000229s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000476s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000496s ]
+
+[ 2018-08-18T23:57:49+08:00 ] 127.0.0.1 /pk10/getPk10AwardData.do?ajaxhandler=GetPk10AwardData&t=0.7538313471828391
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000410s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000736s ]
+NOTIC: [2] Declaration of Fuzhi\Controller\EmptyController::_empty($name) should be compatible with Fuzhi\Controller\HomeController::_empty() C:\lgc\kaijiang\Application\Fuzhi\Controller\EmptyController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `ot_config` [ RunTime:0.016370s ]
+SQL: SELECT `type`,`name`,`value` FROM `ot_config` WHERE ( `status` = 1 )  [ RunTime:0.000705s ]
+SQL: select dat_codes,replace(dat_expect,'-','') dat_expect, dat_open_time from lot_data where dat_type=20 order by dat_expect desc limit 1 [ RunTime:0.000532s ]
+SQL: select * from lot_type where isDelete=0 order by sort asc [ RunTime:0.000809s ]
+SQL: select actionNo, actionTime from lot_data_time where type=20 and actionTime<='12:03:00' order by actionTime desc limit 1 [ RunTime:0.000958s ]
+SQL: select actionNo, actionTime from lot_data_time where type=20 and actionTime>'12:03:00' order by actionTime limit 1 [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001267s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001317s ]
+
+[ 2018-08-18T23:57:50+08:00 ] 127.0.0.1 /pk10/getPk10AwardTimes.do?ajaxhandler=GetPk10AwardTimes&t=0.8865493490913832
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000651s ]
+NOTIC: [2] Declaration of Fuzhi\Controller\EmptyController::_empty($name) should be compatible with Fuzhi\Controller\HomeController::_empty() C:\lgc\kaijiang\Application\Fuzhi\Controller\EmptyController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `ot_config` [ RunTime:0.004580s ]
+SQL: SELECT `type`,`name`,`value` FROM `ot_config` WHERE ( `status` = 1 )  [ RunTime:0.000228s ]
+SQL: select * from lot_type where isDelete=0 order by sort asc [ RunTime:0.000311s ]
+SQL: select actionNo, actionTime from lot_data_time where type=20 and actionTime<='23:58:20' order by actionTime desc limit 1 [ RunTime:0.000420s ]
+SQL: select actionNo, actionTime from lot_data_time where type=20 and actionTime>'23:58:20' order by actionTime limit 1 [ RunTime:0.000379s ]
+SQL: select actionNo, actionTime from lot_data_time where type=20 order by actionTime limit 1 [ RunTime:0.000384s ]
+SQL: select dat_codes from lot_data where dat_type=20 and dat_expect='701666' [ RunTime:0.000141s ]
+NOTIC: [8] Undefined index: dat_codes C:\lgc\kaijiang\Application\Fuzhi\BLL\LottoryDataMgr.php 第 488 行.
+SQL: select dat_codes from lot_data where dat_type=20 order by dat_id desc limit 1 [ RunTime:0.000159s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000521s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000540s ]
+
+[ 2018-08-18T23:57:52+08:00 ] 127.0.0.1 /pk10/getPk10AwardData.do?ajaxhandler=GetPk10AwardData&t=0.9391249216992736
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000432s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000719s ]
+NOTIC: [2] Declaration of Fuzhi\Controller\EmptyController::_empty($name) should be compatible with Fuzhi\Controller\HomeController::_empty() C:\lgc\kaijiang\Application\Fuzhi\Controller\EmptyController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `ot_config` [ RunTime:0.005605s ]
+SQL: SELECT `type`,`name`,`value` FROM `ot_config` WHERE ( `status` = 1 )  [ RunTime:0.000334s ]
+SQL: select dat_codes,replace(dat_expect,'-','') dat_expect, dat_open_time from lot_data where dat_type=20 order by dat_expect desc limit 1 [ RunTime:0.000207s ]
+SQL: select * from lot_type where isDelete=0 order by sort asc [ RunTime:0.000296s ]
+SQL: select actionNo, actionTime from lot_data_time where type=20 and actionTime<='12:03:00' order by actionTime desc limit 1 [ RunTime:0.000418s ]
+SQL: select actionNo, actionTime from lot_data_time where type=20 and actionTime>'12:03:00' order by actionTime limit 1 [ RunTime:0.000345s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000459s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000476s ]
+
+[ 2018-08-18T23:57:54+08:00 ] 127.0.0.1 /pk10/getPk10AwardData.do?ajaxhandler=GetPk10AwardData&t=0.8968915019025105
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000397s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000670s ]
+NOTIC: [2] Declaration of Fuzhi\Controller\EmptyController::_empty($name) should be compatible with Fuzhi\Controller\HomeController::_empty() C:\lgc\kaijiang\Application\Fuzhi\Controller\EmptyController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `ot_config` [ RunTime:0.005021s ]
+SQL: SELECT `type`,`name`,`value` FROM `ot_config` WHERE ( `status` = 1 )  [ RunTime:0.000243s ]
+SQL: select dat_codes,replace(dat_expect,'-','') dat_expect, dat_open_time from lot_data where dat_type=20 order by dat_expect desc limit 1 [ RunTime:0.000185s ]
+SQL: select * from lot_type where isDelete=0 order by sort asc [ RunTime:0.000288s ]
+SQL: select actionNo, actionTime from lot_data_time where type=20 and actionTime<='12:03:00' order by actionTime desc limit 1 [ RunTime:0.000366s ]
+SQL: select actionNo, actionTime from lot_data_time where type=20 and actionTime>'12:03:00' order by actionTime limit 1 [ RunTime:0.000364s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000494s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000513s ]
+
+[ 2018-08-18T23:57:56+08:00 ] 127.0.0.1 /pk10/getPk10AwardData.do?ajaxhandler=GetPk10AwardData&t=0.8257997504388388
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000390s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000628s ]
+NOTIC: [2] Declaration of Fuzhi\Controller\EmptyController::_empty($name) should be compatible with Fuzhi\Controller\HomeController::_empty() C:\lgc\kaijiang\Application\Fuzhi\Controller\EmptyController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `ot_config` [ RunTime:0.004559s ]
+SQL: SELECT `type`,`name`,`value` FROM `ot_config` WHERE ( `status` = 1 )  [ RunTime:0.000286s ]
+SQL: select dat_codes,replace(dat_expect,'-','') dat_expect, dat_open_time from lot_data where dat_type=20 order by dat_expect desc limit 1 [ RunTime:0.000210s ]
+SQL: select * from lot_type where isDelete=0 order by sort asc [ RunTime:0.000319s ]
+SQL: select actionNo, actionTime from lot_data_time where type=20 and actionTime<='12:03:00' order by actionTime desc limit 1 [ RunTime:0.000415s ]
+SQL: select actionNo, actionTime from lot_data_time where type=20 and actionTime>'12:03:00' order by actionTime limit 1 [ RunTime:0.000406s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000541s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000560s ]
+
+[ 2018-08-18T23:57:58+08:00 ] 127.0.0.1 /pk10/getPk10AwardData.do?ajaxhandler=GetPk10AwardData&t=0.359952617735269
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000625s ]
+NOTIC: [2] Declaration of Fuzhi\Controller\EmptyController::_empty($name) should be compatible with Fuzhi\Controller\HomeController::_empty() C:\lgc\kaijiang\Application\Fuzhi\Controller\EmptyController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `ot_config` [ RunTime:0.004903s ]
+SQL: SELECT `type`,`name`,`value` FROM `ot_config` WHERE ( `status` = 1 )  [ RunTime:0.000272s ]
+SQL: select dat_codes,replace(dat_expect,'-','') dat_expect, dat_open_time from lot_data where dat_type=20 order by dat_expect desc limit 1 [ RunTime:0.000220s ]
+SQL: select * from lot_type where isDelete=0 order by sort asc [ RunTime:0.000296s ]
+SQL: select actionNo, actionTime from lot_data_time where type=20 and actionTime<='12:03:00' order by actionTime desc limit 1 [ RunTime:0.000377s ]
+SQL: select actionNo, actionTime from lot_data_time where type=20 and actionTime>'12:03:00' order by actionTime limit 1 [ RunTime:0.000412s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000565s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000584s ]
+
+[ 2018-08-18T23:58:00+08:00 ] 127.0.0.1 /pk10/getPk10AwardData.do?ajaxhandler=GetPk10AwardData&t=0.2056395604906518
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000635s ]
+NOTIC: [2] Declaration of Fuzhi\Controller\EmptyController::_empty($name) should be compatible with Fuzhi\Controller\HomeController::_empty() C:\lgc\kaijiang\Application\Fuzhi\Controller\EmptyController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `ot_config` [ RunTime:0.004990s ]
+SQL: SELECT `type`,`name`,`value` FROM `ot_config` WHERE ( `status` = 1 )  [ RunTime:0.007232s ]
+SQL: select dat_codes,replace(dat_expect,'-','') dat_expect, dat_open_time from lot_data where dat_type=20 order by dat_expect desc limit 1 [ RunTime:0.000251s ]
+SQL: select * from lot_type where isDelete=0 order by sort asc [ RunTime:0.000305s ]
+SQL: select actionNo, actionTime from lot_data_time where type=20 and actionTime<='12:03:00' order by actionTime desc limit 1 [ RunTime:0.000412s ]
+SQL: select actionNo, actionTime from lot_data_time where type=20 and actionTime>'12:03:00' order by actionTime limit 1 [ RunTime:0.000378s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000499s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000520s ]
+
+[ 2018-08-18T23:58:03+08:00 ] 127.0.0.1 /pk10/getPk10AwardData.do?ajaxhandler=GetPk10AwardData&t=0.5367425493545586
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000410s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000701s ]
+NOTIC: [2] Declaration of Fuzhi\Controller\EmptyController::_empty($name) should be compatible with Fuzhi\Controller\HomeController::_empty() C:\lgc\kaijiang\Application\Fuzhi\Controller\EmptyController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `ot_config` [ RunTime:0.005092s ]
+SQL: SELECT `type`,`name`,`value` FROM `ot_config` WHERE ( `status` = 1 )  [ RunTime:0.000286s ]
+SQL: select dat_codes,replace(dat_expect,'-','') dat_expect, dat_open_time from lot_data where dat_type=20 order by dat_expect desc limit 1 [ RunTime:0.000171s ]
+SQL: select * from lot_type where isDelete=0 order by sort asc [ RunTime:0.000259s ]
+SQL: select actionNo, actionTime from lot_data_time where type=20 and actionTime<='12:03:00' order by actionTime desc limit 1 [ RunTime:0.000376s ]
+SQL: select actionNo, actionTime from lot_data_time where type=20 and actionTime>'12:03:00' order by actionTime limit 1 [ RunTime:0.000395s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000515s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000534s ]
+
+[ 2018-08-18T23:58:05+08:00 ] 127.0.0.1 /pk10/getPk10AwardData.do?ajaxhandler=GetPk10AwardData&t=0.45126314614916496
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000622s ]
+NOTIC: [2] Declaration of Fuzhi\Controller\EmptyController::_empty($name) should be compatible with Fuzhi\Controller\HomeController::_empty() C:\lgc\kaijiang\Application\Fuzhi\Controller\EmptyController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `ot_config` [ RunTime:0.005032s ]
+SQL: SELECT `type`,`name`,`value` FROM `ot_config` WHERE ( `status` = 1 )  [ RunTime:0.000266s ]
+SQL: select dat_codes,replace(dat_expect,'-','') dat_expect, dat_open_time from lot_data where dat_type=20 order by dat_expect desc limit 1 [ RunTime:0.000212s ]
+SQL: select * from lot_type where isDelete=0 order by sort asc [ RunTime:0.000304s ]
+SQL: select actionNo, actionTime from lot_data_time where type=20 and actionTime<='12:03:00' order by actionTime desc limit 1 [ RunTime:0.000377s ]
+SQL: select actionNo, actionTime from lot_data_time where type=20 and actionTime>'12:03:00' order by actionTime limit 1 [ RunTime:0.000327s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000488s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000507s ]
+
+[ 2018-08-18T23:58:07+08:00 ] 127.0.0.1 /pk10/getPk10AwardData.do?ajaxhandler=GetPk10AwardData&t=0.2443744622107702
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000722s ]
+NOTIC: [2] Declaration of Fuzhi\Controller\EmptyController::_empty($name) should be compatible with Fuzhi\Controller\HomeController::_empty() C:\lgc\kaijiang\Application\Fuzhi\Controller\EmptyController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `ot_config` [ RunTime:0.003553s ]
+SQL: SELECT `type`,`name`,`value` FROM `ot_config` WHERE ( `status` = 1 )  [ RunTime:0.000274s ]
+SQL: select dat_codes,replace(dat_expect,'-','') dat_expect, dat_open_time from lot_data where dat_type=20 order by dat_expect desc limit 1 [ RunTime:0.000208s ]
+SQL: select * from lot_type where isDelete=0 order by sort asc [ RunTime:0.000258s ]
+SQL: select actionNo, actionTime from lot_data_time where type=20 and actionTime<='12:03:00' order by actionTime desc limit 1 [ RunTime:0.000379s ]
+SQL: select actionNo, actionTime from lot_data_time where type=20 and actionTime>'12:03:00' order by actionTime limit 1 [ RunTime:0.000383s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000577s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000594s ]
+
+[ 2018-08-18T23:58:09+08:00 ] 127.0.0.1 /pk10/getPk10AwardData.do?ajaxhandler=GetPk10AwardData&t=0.9021707987908292
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000684s ]
+NOTIC: [2] Declaration of Fuzhi\Controller\EmptyController::_empty($name) should be compatible with Fuzhi\Controller\HomeController::_empty() C:\lgc\kaijiang\Application\Fuzhi\Controller\EmptyController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `ot_config` [ RunTime:0.005111s ]
+SQL: SELECT `type`,`name`,`value` FROM `ot_config` WHERE ( `status` = 1 )  [ RunTime:0.000227s ]
+SQL: select dat_codes,replace(dat_expect,'-','') dat_expect, dat_open_time from lot_data where dat_type=20 order by dat_expect desc limit 1 [ RunTime:0.000194s ]
+SQL: select * from lot_type where isDelete=0 order by sort asc [ RunTime:0.000276s ]
+SQL: select actionNo, actionTime from lot_data_time where type=20 and actionTime<='12:03:00' order by actionTime desc limit 1 [ RunTime:0.000415s ]
+SQL: select actionNo, actionTime from lot_data_time where type=20 and actionTime>'12:03:00' order by actionTime limit 1 [ RunTime:0.000376s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000504s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000536s ]
+
+[ 2018-08-18T23:58:11+08:00 ] 127.0.0.1 /pk10/getPk10AwardData.do?ajaxhandler=GetPk10AwardData&t=0.3121759873284544
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000652s ]
+NOTIC: [2] Declaration of Fuzhi\Controller\EmptyController::_empty($name) should be compatible with Fuzhi\Controller\HomeController::_empty() C:\lgc\kaijiang\Application\Fuzhi\Controller\EmptyController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `ot_config` [ RunTime:0.003597s ]
+SQL: SELECT `type`,`name`,`value` FROM `ot_config` WHERE ( `status` = 1 )  [ RunTime:0.000267s ]
+SQL: select dat_codes,replace(dat_expect,'-','') dat_expect, dat_open_time from lot_data where dat_type=20 order by dat_expect desc limit 1 [ RunTime:0.000178s ]
+SQL: select * from lot_type where isDelete=0 order by sort asc [ RunTime:0.000236s ]
+SQL: select actionNo, actionTime from lot_data_time where type=20 and actionTime<='12:03:00' order by actionTime desc limit 1 [ RunTime:0.000335s ]
+SQL: select actionNo, actionTime from lot_data_time where type=20 and actionTime>'12:03:00' order by actionTime limit 1 [ RunTime:0.000344s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000458s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000476s ]
+
+[ 2018-08-18T23:58:13+08:00 ] 127.0.0.1 /pk10/getPk10AwardData.do?ajaxhandler=GetPk10AwardData&t=0.23650527033643032
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000614s ]
+NOTIC: [2] Declaration of Fuzhi\Controller\EmptyController::_empty($name) should be compatible with Fuzhi\Controller\HomeController::_empty() C:\lgc\kaijiang\Application\Fuzhi\Controller\EmptyController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `ot_config` [ RunTime:0.003612s ]
+SQL: SELECT `type`,`name`,`value` FROM `ot_config` WHERE ( `status` = 1 )  [ RunTime:0.000237s ]
+SQL: select dat_codes,replace(dat_expect,'-','') dat_expect, dat_open_time from lot_data where dat_type=20 order by dat_expect desc limit 1 [ RunTime:0.000144s ]
+SQL: select * from lot_type where isDelete=0 order by sort asc [ RunTime:0.000236s ]
+SQL: select actionNo, actionTime from lot_data_time where type=20 and actionTime<='12:03:00' order by actionTime desc limit 1 [ RunTime:0.000339s ]
+SQL: select actionNo, actionTime from lot_data_time where type=20 and actionTime>'12:03:00' order by actionTime limit 1 [ RunTime:0.000316s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000458s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000481s ]
+
+[ 2018-08-18T23:58:15+08:00 ] 127.0.0.1 /pk10/getPk10AwardData.do?ajaxhandler=GetPk10AwardData&t=0.755179947301343
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000394s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000665s ]
+NOTIC: [2] Declaration of Fuzhi\Controller\EmptyController::_empty($name) should be compatible with Fuzhi\Controller\HomeController::_empty() C:\lgc\kaijiang\Application\Fuzhi\Controller\EmptyController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `ot_config` [ RunTime:0.003602s ]
+SQL: SELECT `type`,`name`,`value` FROM `ot_config` WHERE ( `status` = 1 )  [ RunTime:0.000290s ]
+SQL: select dat_codes,replace(dat_expect,'-','') dat_expect, dat_open_time from lot_data where dat_type=20 order by dat_expect desc limit 1 [ RunTime:0.000200s ]
+SQL: select * from lot_type where isDelete=0 order by sort asc [ RunTime:0.000266s ]
+SQL: select actionNo, actionTime from lot_data_time where type=20 and actionTime<='12:03:00' order by actionTime desc limit 1 [ RunTime:0.000373s ]
+SQL: select actionNo, actionTime from lot_data_time where type=20 and actionTime>'12:03:00' order by actionTime limit 1 [ RunTime:0.000364s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.005311s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005345s ]
+
+[ 2018-08-18T23:58:17+08:00 ] 127.0.0.1 /pk10/getPk10AwardData.do?ajaxhandler=GetPk10AwardData&t=0.7704252864010293
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000587s ]
+NOTIC: [2] Declaration of Fuzhi\Controller\EmptyController::_empty($name) should be compatible with Fuzhi\Controller\HomeController::_empty() C:\lgc\kaijiang\Application\Fuzhi\Controller\EmptyController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `ot_config` [ RunTime:0.004871s ]
+SQL: SELECT `type`,`name`,`value` FROM `ot_config` WHERE ( `status` = 1 )  [ RunTime:0.000206s ]
+SQL: select dat_codes,replace(dat_expect,'-','') dat_expect, dat_open_time from lot_data where dat_type=20 order by dat_expect desc limit 1 [ RunTime:0.000157s ]
+SQL: select * from lot_type where isDelete=0 order by sort asc [ RunTime:0.000229s ]
+SQL: select actionNo, actionTime from lot_data_time where type=20 and actionTime<='12:03:00' order by actionTime desc limit 1 [ RunTime:0.012323s ]
+SQL: select actionNo, actionTime from lot_data_time where type=20 and actionTime>'12:03:00' order by actionTime limit 1 [ RunTime:0.000470s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000481s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000501s ]
+
+[ 2018-08-18T23:58:24+08:00 ] 127.0.0.1 /cqssc/getHistoryData.do
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000570s ]
+NOTIC: [2] Declaration of Fuzhi\Controller\EmptyController::_empty($name) should be compatible with Fuzhi\Controller\HomeController::_empty() C:\lgc\kaijiang\Application\Fuzhi\Controller\EmptyController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `ot_config` [ RunTime:0.004773s ]
+SQL: SELECT `type`,`name`,`value` FROM `ot_config` WHERE ( `status` = 1 )  [ RunTime:0.000245s ]
+SQL: select replace(dat_expect,'-','') dat_expect,dat_codes,dat_open_time from lot_data where dat_type=1 order by dat_expect desc limit 12 [ RunTime:0.000158s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000532s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000551s ]
+
+[ 2018-08-18T23:58:25+08:00 ] 127.0.0.1 /cqssc/numbertrendData.do?ball=1&count=25&t=0.4776770636333436
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000567s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000972s ]
+NOTIC: [2] Declaration of Fuzhi\Controller\EmptyController::_empty($name) should be compatible with Fuzhi\Controller\HomeController::_empty() C:\lgc\kaijiang\Application\Fuzhi\Controller\EmptyController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `ot_config` [ RunTime:0.012329s ]
+SQL: SELECT `type`,`name`,`value` FROM `ot_config` WHERE ( `status` = 1 )  [ RunTime:0.000741s ]
+SQL: select replace(dat_expect,'-','') dat_expect,dat_codes,dat_open_time from lot_data where dat_type=1 order by dat_expect desc limit 25 [ RunTime:0.000546s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001669s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001739s ]
+
+[ 2018-08-18T23:58:26+08:00 ] 127.0.0.1 /jsssc/getCqsscAwardData.do?t=0.432476218678562
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000734s ]
+NOTIC: [2] Declaration of Fuzhi\Controller\EmptyController::_empty($name) should be compatible with Fuzhi\Controller\HomeController::_empty() C:\lgc\kaijiang\Application\Fuzhi\Controller\EmptyController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `ot_config` [ RunTime:0.009130s ]
+SQL: SELECT `type`,`name`,`value` FROM `ot_config` WHERE ( `status` = 1 )  [ RunTime:0.000252s ]
+SQL: select dat_codes,replace(dat_expect,'-','') dat_expect, dat_open_time from lot_data where dat_type=40 order by dat_expect desc limit 1 [ RunTime:0.000191s ]
+NOTIC: [8] Undefined offset: 0 C:\lgc\kaijiang\Application\Fuzhi\BLL\LottoryDataMgr.php 第 478 行.
+SQL: select * from lot_type where isDelete=0 order by sort asc [ RunTime:0.000337s ]
+SQL: select actionNo, actionTime from lot_data_time where type=40 and actionTime<='08:00:30' order by actionTime desc limit 1 [ RunTime:0.000502s ]
+SQL: select actionNo, actionTime from lot_data_time where type=40 and actionTime>'08:00:30' order by actionTime limit 1 [ RunTime:0.000394s ]
+NOTIC: [8] A non well formed numeric value encountered C:\lgc\kaijiang\Application\Fuzhi\BLL\LottoryDataMgr.php 第 516 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001137s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001175s ]
+
+[ 2018-08-18T23:58:27+08:00 ] 127.0.0.1 /jsssc/getCqsscAwardTimes.do?t=0.4926783521570881
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000433s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000765s ]
+NOTIC: [2] Declaration of Fuzhi\Controller\EmptyController::_empty($name) should be compatible with Fuzhi\Controller\HomeController::_empty() C:\lgc\kaijiang\Application\Fuzhi\Controller\EmptyController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `ot_config` [ RunTime:0.004930s ]
+SQL: SELECT `type`,`name`,`value` FROM `ot_config` WHERE ( `status` = 1 )  [ RunTime:0.000248s ]
+SQL: select * from lot_type where isDelete=0 order by sort asc [ RunTime:0.000289s ]
+SQL: select actionNo, actionTime from lot_data_time where type=40 and actionTime<='23:58:57' order by actionTime desc limit 1 [ RunTime:0.000357s ]
+SQL: select actionNo, actionTime from lot_data_time where type=40 and actionTime>'23:58:57' order by actionTime limit 1 [ RunTime:0.000298s ]
+SQL: select actionNo, actionTime from lot_data_time where type=40 order by actionTime limit 1 [ RunTime:0.000304s ]
+SQL: select dat_codes from lot_data where dat_type=40 and dat_expect='20180818-119' [ RunTime:0.000151s ]
+NOTIC: [8] Undefined index: dat_codes C:\lgc\kaijiang\Application\Fuzhi\BLL\LottoryDataMgr.php 第 488 行.
+SQL: select dat_codes from lot_data where dat_type=40 order by dat_id desc limit 1 [ RunTime:0.000156s ]
+NOTIC: [8] A non well formed numeric value encountered C:\lgc\kaijiang\Application\Fuzhi\BLL\LottoryDataMgr.php 第 516 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000469s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000486s ]
+
