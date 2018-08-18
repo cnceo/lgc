@@ -66,11 +66,7 @@
             <li><a href="<?php echo ($BaseUrl); ?>pk10/">北京赛车pk10</a></li>
 			<li><a href="<?php echo ($BaseUrl); ?>xyft/">幸运飞艇</a></li>
 			<li><a href="<?php echo ($BaseUrl); ?>cqssc/">重庆时时彩</a></li>
-<<<<<<< HEAD
-			<li><a href="<?php echo ($BaseUrl); ?>xjssc/">极速时时彩</a></li>
-=======
 			<li><a href="<?php echo ($BaseUrl); ?>jsssc/">极速时时彩</a></li>
->>>>>>> 2a36a477cf5879f452b7ab867ad48db50c6fee2c
 			<li><a href="<?php echo ($BaseUrl); ?>tjssc/">天津时时彩</a></li>
 			<li><a href="<?php echo ($BaseUrl); ?>gdkl10/">广东快乐十分</a></li>
             <li><a href="#" id="ps28">加拿大28</a></li>
@@ -417,13 +413,8 @@ $(function(){
                     <li><a href="/xyft/"><em class="xyft-icon"></em>幸运飞艇</a><span id="xyft-timeqihaob"></span></li>
                     <li><a href="/cqssc/"><em class="cqssc-icon"></em>重庆时时彩 </a><span id="cqssc-timeqihaob"></span></li>
                     <li><a href="/gdkl10/"><em class="gdkl10-icon"></em>广东快乐十分 </a><span id="gdkl10-timeqihaob"></span></li>
-<<<<<<< HEAD
-                    <li><a href="/xync/"><em class="xync-icon"></em>加拿大28 </a><span id="xync-timeqihaob"></span></li>
-                    <li><a href="/xjssc/"><em class="xjssc-icon"></em>极速时时彩</a> <span id="xjssc-timeqihaob"></span></li>
-=======
                     <li><a  href="#" id="pc28"><em class="xync-icon"></em>加拿大28 </a><span id="xync-timeqihaob"></span></li>
                     <li><a href="/jsssc/"><em class="jsssc-icon"></em>极速时时彩</a> <span id="xjssc-timeqihaob"></span></li>
->>>>>>> 2a36a477cf5879f452b7ab867ad48db50c6fee2c
                     <li><a href="/tjssc/"><em class="tjssc-icon"></em>天津时时彩 </a><span id="tjssc-timeqihaob"></span></li>
                     <li><a href="/gd11x5/"><em class="gd11x5-icon"></em>广东11选5 </a><span id="gd11x5-timeqihaob"></span></li>
                     <li><a href="/jsk3/"><em class="jsk3-icon"></em>江苏快三 </a><span id="jsk3-timeqihaob"></span></li>
