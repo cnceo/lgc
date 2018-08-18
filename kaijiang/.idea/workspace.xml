@@ -3,74 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="38db9e98-7469-4002-8474-9da4ac850cab" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Fuzhi/View/Common/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Fuzhi/View/Common/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Runtime/Cache/Fuzhi/1c917541cddc5bcc6c6a06ee10a2c397.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Runtime/Cache/Fuzhi/37cb78913528cded565db031422df678.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Runtime/Cache/Fuzhi/4e840d52b1f9c67db3bb5dc8a55a9067.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Runtime/Cache/Fuzhi/5814e68c0ffc38846c486220abe98536.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Runtime/Cache/Fuzhi/5cdf5fe446e263261b20340a58cc8b73.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Runtime/Cache/Fuzhi/77709c337bed4fe1356f66a673ddaa5f.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Runtime/Cache/Fuzhi/7772f36a8dad2f7ea94f3658fd64bc62.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Runtime/Cache/Fuzhi/92e3c3338b29b3f4eeb5e5c7e3e71d32.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Runtime/Cache/Fuzhi/936114b494f887498fe7d34f0362d584.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Runtime/Cache/Fuzhi/ad97cba2ae653bce834d2f286fc72431.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Runtime/Cache/Fuzhi/b21991bd2aa7742873e06129d7a9111b.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Runtime/Cache/Fuzhi/c15047a4ef871ba2cdbb4c1aabee209d.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Runtime/Cache/Fuzhi/c6a44fc8eeea431bd0a3fdd926c59fca.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Runtime/Cache/Fuzhi/c8c6e33b472f50f9aed80a6f976be445.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Runtime/Cache/Fuzhi/d0beb6a68c6b3dad0b84c9b31d04c758.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Runtime/Cache/Fuzhi/d43922d195aeeb50063fa94c75f7ef16.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Runtime/Cache/Fuzhi/f2df31bb9a8101468f06ecd9de4f1037.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Runtime/Cache/Fuzhi/f739488be7d7de0711df48adb03c59f0.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Runtime/Cache/Fuzhi/fac16712b8a4d3f13c8a46b945a2542a.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Runtime/Cache/Fuzhi/fd5abec39b0d920a806f352eec8253cc.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Runtime/Logs/1534519340-18_08_17.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Runtime/Logs/1534529312-18_08_18.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Runtime/Logs/1534572700-18_08_18.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Runtime/Logs/1534574709-18_08_18.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Runtime/Logs/1534575434-18_08_18.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Runtime/Logs/1534576503-18_08_18.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Runtime/Logs/1534577669-18_08_18.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Runtime/Logs/1534579543-18_08_18.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Runtime/Logs/1534581697-18_08_18.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Runtime/Logs/1534583201-18_08_18.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Runtime/Logs/1534584456-18_08_18.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Runtime/Logs/18_08_17.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Runtime/Logs/18_08_18.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Runtime/Temp/09349bf36d05d4e489c3d7657d90712c.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Runtime/Temp/1d30ade6ce949ed0f5bcebd546d6815e.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Runtime/Temp/1e4859344e028020a6a36570c9bdef8f.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Runtime/Temp/24b35d1d9eea68b0de314c8004fda3fd.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Runtime/Temp/2fdcaeb97b66d0467a7ea9b397d0d68c.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Runtime/Temp/377b0e402503fd9dce2f1734bf4dc282.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Runtime/Temp/4874be0958166023970e13483a435d14.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Runtime/Temp/4c0e305632165b00a16fb54f0d6ad779.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Runtime/Temp/4e819c837d54a6ed09abc77a8560a66f.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Runtime/Temp/668b9f6d9e1aebb8a8130ae7c512759e.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Runtime/Temp/71dc068ea67c23fdec23d4d3dc7e8691.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Runtime/Temp/7f754add91047d146882de654c60dcc6.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Runtime/Temp/80333cd55a05f21c90885582bca65c50.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Runtime/Temp/80f7f7f0b4837271b15b7f3d297942a0.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Runtime/Temp/8a28c7a36fb4597b15ce55ddfaa40325.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Runtime/Temp/9bbd1c61fed70e37ce4c6e8005585205.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Runtime/Temp/a0b4dc8de5508d3d521b5335cd613c55.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Runtime/Temp/a5bdad74b698c8ab782e20379bc888ec.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Runtime/Temp/b036eb5678a8948c6dd0fd6fe50cf8c2.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Runtime/Temp/b221e7775ef54784d09ce27ba19f106d.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Runtime/Temp/bed9585a302bfe49af480acc5ad169de.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Runtime/Temp/c74a0cf93b63c7ea464c9c52c4fbe263.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Runtime/Temp/ca716c67c3f103a41b1b972bfbdce722.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Runtime/Temp/cb0e2037f9991db4b1c7d89834f7b1df.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Runtime/Temp/cd349530f93f08116c764f637b43cc99.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Runtime/Temp/d04e948eebc367870eec7008575c47ff.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Runtime/Temp/d3d93054c3bb6f3ad76ca029e3af552f.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Runtime/Temp/d8cc2cc6d8a9d696259ee421a65d8c6a.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Runtime/Temp/ddd1430e1400dd3bd6a0b58bc6777270.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Runtime/Temp/e357d72f1a0f9940611beb46fbc8cbba.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Runtime/Temp/f7aafca2517e6dbc2bbcf5078ca92c7d.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Runtime/Temp/fa0e786d0e3645bfa1ed6d9ae68bc4b9.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/indexqihao.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/indexqihao.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/jiqiaoqihao.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/jiqiaoqihao.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Runtime/Logs/18_08_18.log" beforeDir="false" afterPath="$PROJECT_DIR$/Runtime/Logs/18_08_18.log" afterDir="false" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -116,14 +49,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="428" />
+          <entry key="html" value="452" />
           <entry key="js" value="307" />
           <entry key="php" value="560" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="428" />
+          <entry key="HTML" value="452" />
           <entry key="JavaScript" value="307" />
           <entry key="PHP" value="560" />
         </counts>
@@ -150,11 +83,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Application/Fuzhi/Config/config.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="152">
-              <caret line="1" column="1717" selection-start-line="1" selection-start-column="1717" selection-end-line="1" selection-end-column="1717" />
+              <caret line="1" column="1694" selection-start-line="1" selection-start-column="1694" selection-end-line="1" selection-end-column="1694" />
             </state>
           </provider>
         </entry>
@@ -186,11 +119,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Application/Fuzhi/View/Public/lottory_latest.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="85" column="47" selection-start-line="85" selection-start-column="47" selection-end-line="85" selection-end-column="47" />
+            <state relative-caret-position="513">
+              <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#li#1;n#ul#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#div#2;n#li#1;n#ul#0;n#div#0;n#!!top" expanded="true" />
@@ -302,7 +235,6 @@
         <option value="$PROJECT_DIR$/Application/Fuzhi/View/xjssc/omitdata.html" />
         <option value="$PROJECT_DIR$/Application/Fuzhi/View/xjssc/twosidedstat.html" />
         <option value="$PROJECT_DIR$/Application/Fuzhi/View/xjssc/zoushitu.html" />
-        <option value="$PROJECT_DIR$/Application/Fuzhi/View/Public/lottory_latest.html" />
         <option value="$PROJECT_DIR$/Application/Fuzhi/View/jsssc/index.html" />
         <option value="$PROJECT_DIR$/Application/Fuzhi/Common/function.php" />
         <option value="$PROJECT_DIR$/Application/Fuzhi/View/jiqiao/article.html" />
@@ -325,6 +257,7 @@
         <option value="$PROJECT_DIR$/js/jiqiaoqihao.js" />
         <option value="$PROJECT_DIR$/js/indexqihao.js" />
         <option value="$PROJECT_DIR$/Application/Fuzhi/View/Common/index.html" />
+        <option value="$PROJECT_DIR$/Application/Fuzhi/View/Public/lottory_latest.html" />
       </list>
     </option>
   </component>
@@ -400,7 +333,7 @@
               <item name="kaijiang" type="462c0819:PsiDirectoryNode" />
               <item name="Application" type="462c0819:PsiDirectoryNode" />
               <item name="Fuzhi" type="462c0819:PsiDirectoryNode" />
-              <item name="Config" type="462c0819:PsiDirectoryNode" />
+              <item name="View" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="kaijiang" type="b2602c69:ProjectViewProjectNode" />
@@ -408,6 +341,7 @@
               <item name="Application" type="462c0819:PsiDirectoryNode" />
               <item name="Fuzhi" type="462c0819:PsiDirectoryNode" />
               <item name="View" type="462c0819:PsiDirectoryNode" />
+              <item name="Public" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -478,12 +412,12 @@
       <workItem from="1534494595664" duration="91000" />
       <workItem from="1534494700606" duration="694000" />
       <workItem from="1534518426846" duration="11103000" />
-      <workItem from="1534570892528" duration="14267000" />
+      <workItem from="1534570892528" duration="15814000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29063000" />
+    <option name="totallyTimeSpent" value="30610000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1932" height="1056" extended-state="0" />
@@ -771,18 +705,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Fuzhi/View/Public/lottory_latest.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="85" column="47" selection-start-line="85" selection-start-column="47" selection-end-line="85" selection-end-column="47" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#li#1;n#ul#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#2;n#li#1;n#ul#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#audio#0;n#li#2;n#ul#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Application/Fuzhi/BLL/LottoryDataMgr.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
@@ -855,7 +777,19 @@
     <entry file="file://$PROJECT_DIR$/Application/Fuzhi/Config/config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
-          <caret line="1" column="1717" selection-start-line="1" selection-start-column="1717" selection-end-line="1" selection-end-column="1717" />
+          <caret line="1" column="1694" selection-start-line="1" selection-start-column="1694" selection-end-line="1" selection-end-column="1694" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Fuzhi/View/Public/lottory_latest.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#li#1;n#ul#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#2;n#li#1;n#ul#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#audio#0;n#li#2;n#ul#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
