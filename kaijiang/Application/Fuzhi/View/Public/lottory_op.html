@@ -19,14 +19,14 @@
             gameNameTemp="kl8";
         }else if (pathname.indexOf("/tjssc/") >= 0){
             gameNameTemp="tjssc";
-        }else if (pathname.indexOf("/xync/") >= 0){
-            gameNameTemp="xync";
+        }else if (pathname.indexOf("/jssc/") >= 0){
+            gameNameTemp="jssc";
         }else if (pathname.indexOf("/jsk3/") >= 0){
             gameNameTemp="jsk3";
         }else if (pathname.indexOf("/shssl/") >= 0){
             gameNameTemp="shssl";
-        }else if (pathname.indexOf("/xjssc/") >= 0){
-            gameNameTemp="xjssc";
+        }else if (pathname.indexOf("/jsssc/") >= 0){
+            gameNameTemp="jsssc";
         }else if (pathname.indexOf("/gd11x5/") >= 0){
             gameNameTemp="gd11x5";
         }else if (pathname.indexOf("/xyft/") >= 0){
@@ -38,6 +38,7 @@
         }
     }
     var list = webListOP[gameNameTemp];
+ //   console.log(webListOP);
     if (list.length > 0) {
         var html = '';
         for (var i = 0, max = list.length; i < max; i++) {

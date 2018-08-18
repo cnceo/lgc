@@ -6,9 +6,11 @@ class EmptyController extends HomeController
 {
     public function _empty($name)
     {
+
         $ctrlName = CONTROLLER_NAME;
         $ctrlName = strtolower($ctrlName);
         $name = strtolower($name);
+
 		//echo $name;
 		switch($name){
 		     case 'kaijiang':
@@ -80,7 +82,7 @@ class EmptyController extends HomeController
 			 
 		}
         $this->assign('lottory', $ctrlName);
-        if ($ctrlName == 'pk10' || $ctrlName == 'cqssc' || $ctrlName == 'gdkl10' || $ctrlName == 'xync' || $ctrlName == 'jsk3' || $ctrlName == 'kl8' || $ctrlName == 'tjssc' || $ctrlName == 'xjssc'  || $ctrlName == 'xyft'  || $ctrlName == 'fc3d' || $ctrlName == 'pl3' || $ctrlName == 'pl3' || $ctrlName == 'gd11x5' || $ctrlName == 'shssl') {
+        if ($ctrlName == 'pk10' || $ctrlName == 'cqssc' || $ctrlName == 'gdkl10' || $ctrlName == 'jssc' || $ctrlName == 'jsk3' || $ctrlName == 'kl8' || $ctrlName == 'tjssc' || $ctrlName == 'jsssc'  || $ctrlName == 'xyft'  || $ctrlName == 'fc3d' || $ctrlName == 'pl3' || $ctrlName == 'pl3' || $ctrlName == 'gd11x5' || $ctrlName == 'shssl') {
             $lottoryName = '';
             $totalExpect = 0;
             if ($ctrlName == 'pk10') {
@@ -118,19 +120,19 @@ class EmptyController extends HomeController
                                 $lottoryName = "天津时时彩";
                                 $totalExpect = 84;
                             } else {
-								if ($ctrlName == 'xjssc') {
-                                $this->title = $title_c.'新疆时时彩开奖视频_新疆时时彩开奖号码_新疆时时彩开奖记录 - ' . C('WEB_SITE_TITLE');
-                                $this->keyword = C("WEB_SITE_xjssc_KEYWORDS") . ' - ' . C('WEB_SITE_KEYWORD');
-                                $this->description = C("WEB_SITE_xjssc_DESCR");
-                                $lottoryName = "新疆时时彩";
-                                $totalExpect = 96;
+								if ($ctrlName == 'jsssc') {
+                                $this->title = $title_c.'极速时时彩开奖视频_极速时时彩开奖号码_极速时时彩开奖记录 - ' . C('WEB_SITE_TITLE');
+                                $this->keyword = C("WEB_SITE_jsssc_KEYWORDS") . ' - ' . C('WEB_SITE_KEYWORD');
+                                $this->description = C("WEB_SITE_jsssc_DESCR");
+                                $lottoryName = "极速时时彩";
+                                $totalExpect = 120;
                             } else {
-                                if ($ctrlName == 'xync') {
-                                    $this->title = $title_c.C("WEB_SITE_XYNC_TITLE") . ' - ' . C('WEB_SITE_TITLE');
-                                    $this->keyword = C("WEB_SITE_XYNC_KEYWORDS") . ' - ' . C('WEB_SITE_KEYWORD');
-                                    $this->description = C("WEB_SITE_XYNC_DESCR");
-                                    $lottoryName = "幸运农场";
-                                    $totalExpect = 97;
+                                if ($ctrlName == 'jssc') {
+                                    $this->title = $title_c.C("WEB_SITE_JSSC_TITLE") . ' - ' . C('WEB_SITE_TITLE');
+                                    $this->keyword = C("WEB_SITE_JSSC_KEYWORDS") . ' - ' . C('WEB_SITE_KEYWORD');
+                                    $this->description = C("WEB_SITE_JSSC_DESCR");
+                                    $lottoryName = "极速赛车";
+                                    $totalExpect = 179;
                                 } else {
                                     if ($ctrlName == 'jsk3') {
                                         $this->title = $title_c.C("WEB_SITE_JSK3_TITLE") . ' - ' . C('WEB_SITE_TITLE');
@@ -193,18 +195,23 @@ class EmptyController extends HomeController
             $this->assign('totalExpect', $totalExpect);
             if (ACTION_NAME == "index") {
                 $id = 0;
+
                 switch ($ctrlName) {
                     case 'pk10':
 					    $swfurl = "http://f.907794.com/pk10/Preloader.swf";
                         $id = 42;
                         break;
+                    case 'jssc':
+                        $swfurl = "http://f.907794.com/pk10/Preloader.swf";
+                        $id = 53;
+                        break;
                     case 'cqssc':
 					    $swfurl = "http://f.907794.com/shishicai/shishicai_self.swf";
                         $id = 43;
                         break;
-						case 'xjssc':
+						case 'jsssc':
 						$swfurl = "http://f.907794.com/pk10/Preloader.swf";
-                        $id = 47;
+                        $id = 54;
                         break;
 						case 'gd11x5':
 						$swfurl = "http://f.907794.com/pk10/Preloader.swf";
@@ -226,10 +233,10 @@ class EmptyController extends HomeController
 					    $swfurl = "http://f.907794.com/gdkl10/horserace_self.swf";
                         $id = 2;
                         break;
-                    case 'xync':
-					    $swfurl = "http://f.907794.com/xync/luckyfarm.swf";
-                        $id = 45;
-                        break;
+//                    case 'xync':
+//					    $swfurl = "http://f.907794.com/xync/luckyfarm.swf";
+//                        $id = 45;
+//                        break;
                     case 'jsk3':
                         $id = 39;
 						$swfurl = "http://f.907794.com/jsk3/jsk3_self.swf";
@@ -289,9 +296,9 @@ class EmptyController extends HomeController
 						//http://www.1396cp.me/video/cqssc/cqssc.swf
 						//http://f.907794.com/shishicai/shishicai_self.swf
                         break;
-						case 'xjssc':
-						$swfurl = "Application/Fuzhi/View/shipin/new_xjssc.html";
-                        break;
+//						case 'xjssc':
+//						$swfurl = "Application/Fuzhi/View/shipin/new_xjssc.html";
+//                        break;
 						case 'gd11x5':
 						$swfurl = "Application/Fuzhi/View/shipin/new_gd11x5.html";
                         break;
@@ -310,9 +317,9 @@ class EmptyController extends HomeController
 						//http://www.1396cp.me/video/gdklsf/gdklsf.swf
 						//http://f.907794.com/gdkl10/horserace_self.swf
                         break;
-                    case 'xync':
-					    $swfurl = "Application/Fuzhi/View/shipin/new_xync.html";
-                        break;
+//                    case 'xync':
+//					    $swfurl = "Application/Fuzhi/View/shipin/new_xync.html";
+//                        break;
                     case 'jsk3':
 						$swfurl = "Application/Fuzhi/View/shipin/new_jsk3.html";
                         break;
@@ -325,6 +332,12 @@ class EmptyController extends HomeController
                     case 'shssl':
 					    $swfurl = "http://rescsj.56hx.com/flash/shssl/shssl.swf?v=20140805";
                         break;
+                     case 'jsssc':
+                         $swfurl = "Application/Fuzhi/View/shipin/new_jsssc.html";
+                         break;
+                     case 'jssc':
+                         $swfurl = "Application/Fuzhi/View/shipin/new_jssc.html";
+                         break;
                     default:
 					    $swfurl = "Application/Fuzhi/View/shipin/new_pk10.html";
                         break;
@@ -371,10 +384,10 @@ class EmptyController extends HomeController
                             $JiQiaotitle = '广东快乐十分技巧';
                             $id = 2;
                             break;
-                        case 'xync':
-                            $JiQiaotitle = '幸运农场技巧';
-                            $id = 45;
-                            break;
+//                        case 'xync':
+//                            $JiQiaotitle = '幸运农场技巧';
+//                            $id = 45;
+//                            break;
                         case 'jsk3':
                             $JiQiaotitle = '江苏快3技巧';
                             $id = 39;
@@ -387,10 +400,10 @@ class EmptyController extends HomeController
                             $JiQiaotitle = '天津时时彩技巧';
                             $id = 40;
                             break;
-							 case 'xjssc':
-                            $JiQiaotitle = '新疆时时彩技巧';
-                            $id = 47;
-                            break;
+//							 case 'xjssc':
+//                            $JiQiaotitle = '新疆时时彩技巧';
+//                            $id = 47;
+//                            break;
 							case 'gd11x5':
                             $JiQiaotitle = '广东11选5技巧';
                             $id = 48;
@@ -399,10 +412,10 @@ class EmptyController extends HomeController
                             $JiQiaotitle = '幸运飞艇技巧';
                             $id = 49;
                             break;
-							case 'fc3d':
-                            $JiQiaotitle = '福彩3d彩技巧';
-                            $id = 50;
-                            break;
+//							case 'fc3d':
+//                            $JiQiaotitle = '福彩3d彩技巧';
+//                            $id = 50;
+//                            break;
 							case 'pl3':
                             $JiQiaotitle = '排列3技巧';
                             $id = 51;
@@ -410,6 +423,14 @@ class EmptyController extends HomeController
                         case 'shssl':
                             $JiQiaotitle = '上海时时乐技巧';
                             $id = 44;
+                            break;
+                        case 'jsssc':
+                            $JiQiaotitle = '極速時時彩技巧';
+                            $id = 53;
+                            break;
+                        case 'jssc':
+                            $JiQiaotitle = '極速賽車技巧';
+                            $id = 54;
                             break;
                         default:
                             $JiQiaotitle = '重庆时时彩技巧';
@@ -442,6 +463,9 @@ class EmptyController extends HomeController
 						$module = M();
 						$list_pk10 = $module->query("SELECT * FROM lot_data where dat_type=20 order by dat_open_time desc limit 4");
         				$this->assign('list_pk10', $list_pk10);
+
+                        $list_jssc = $module->query("SELECT * FROM lot_data where dat_type=39 order by dat_open_time desc limit 4");
+                        $this->assign('list_jssc', $list_jssc);
 		
 						$list_cqssc = $module->query("SELECT * FROM lot_data where dat_type=1 order by dat_open_time desc limit 4");
         				$this->assign('list_cqssc', $list_cqssc);
@@ -452,8 +476,8 @@ class EmptyController extends HomeController
 						$list_xync = $module->query("SELECT * FROM lot_data where dat_type=18 order by dat_open_time desc limit 4");
 						$this->assign('list_xync', $list_xync);
 		
-						$list_xjssc = $module->query("SELECT * FROM lot_data where dat_type=35 order by dat_open_time desc limit 4");
-						$this->assign('list_xjssc', $list_xjssc);
+						$list_jsssc = $module->query("SELECT * FROM lot_data where dat_type=40 order by dat_open_time desc limit 4");
+						$this->assign('list_jsssc', $list_jsssc);
 		
 						$list_tjssc = $module->query("SELECT * FROM lot_data where dat_type=3 order by dat_open_time desc limit 4");
 					    $this->assign('list_tjssc', $list_tjssc);
@@ -481,6 +505,9 @@ class EmptyController extends HomeController
 						$module = M();
 						$list_pk10 = $module->query("SELECT * FROM lot_data where dat_type=20 order by dat_open_time desc limit 4");
         				$this->assign('list_pk10', $list_pk10);
+
+                        $list_jssc = $module->query("SELECT * FROM lot_data where dat_type=39 order by dat_open_time desc limit 4");
+                        $this->assign('list_jssc', $list_jssc);
 		
 						$list_cqssc = $module->query("SELECT * FROM lot_data where dat_type=1 order by dat_open_time desc limit 4");
         				$this->assign('list_cqssc', $list_cqssc);
@@ -491,8 +518,8 @@ class EmptyController extends HomeController
 						$list_xync = $module->query("SELECT * FROM lot_data where dat_type=18 order by dat_open_time desc limit 4");
 						$this->assign('list_xync', $list_xync);
 		
-						$list_xjssc = $module->query("SELECT * FROM lot_data where dat_type=35 order by dat_open_time desc limit 4");
-						$this->assign('list_xjssc', $list_xjssc);
+						$list_jsssc = $module->query("SELECT * FROM lot_data where dat_type=40 order by dat_open_time desc limit 4");
+						$this->assign('list_jsssc', $list_jsssc);
 		
 						$list_tjssc = $module->query("SELECT * FROM lot_data where dat_type=3 order by dat_open_time desc limit 4");
 					    $this->assign('list_tjssc', $list_tjssc);
@@ -553,10 +580,12 @@ class EmptyController extends HomeController
                                 if ($ctrlName == 'check.php') {
                                     echo 'fuzhi.biz';
                                 } else {
+
                                     if ($ctrlName == 'sitemap') {
                                         $this->display("sitemap/index");
                                     } else {
                                         echo $ctrlName . '->' . $name;
+
                                         header("HTTP/1.0 404 Not Found");
                                         $this->display('Common:404');
                                     }

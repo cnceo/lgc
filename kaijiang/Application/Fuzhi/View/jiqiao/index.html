@@ -36,11 +36,13 @@
 	   <div class="type_list">
 		   <ul> 
 						      		<li> <a id="pk10_jiqiao" href="/jiqiao/pk10/">北京赛车pk10技巧</a></li>
+			   						<li> <a id="jssc_jiqiao" href="/jiqiao/jssc/">極速賽車技巧</a></li>
 						      		<li> <a id="cqssc_jiqiao" href="/jiqiao/cqssc/">重庆时时彩技巧</a></li>
+		   							<li> <a id="jsssc_jiqiao" href="/jiqiao/jsssc/">極速时时彩技巧</a></li>
 						      		<li> <a id="gdkl10_jiqiao" href="/jiqiao/gdkl10/">广东快乐十分技巧</a></li>
 						      		<li> <a id="kl8_jiqiao" href="/jiqiao/kl8/">快乐8技巧</a></li>
 						      		<li> <a id="tjssc_jiqiao" href="/jiqiao/tjssc/">天津时时彩技巧</a></li>
-						      		<li> <a id="xync_jiqiao" href="/jiqiao/xync/">幸运农场技巧</a></li>
+						      		<!--<li> <a id="xync_jiqiao" href="/jiqiao/xync/">幸运农场技巧</a></li>-->
 						      		<li> <a id="jsk3_jiqiao" href="/jiqiao/jsk3/">江苏快3技巧</a></li>
 						      		<li> <a id="shssl_jiqiao" href="/jiqiao/shssl/">上海时时乐技巧</a></li>
 				      </ul>
@@ -89,6 +91,33 @@
             </volist> 
 
 			</ul>
+
+		<h3 style="background:#f9f9f9;" class="on"><em></em>極速赛车开奖号码</h3>
+		<ul style="display: block;">
+			<volist name="list_jssc" id="data">
+				<li>
+					<div class="openinfo"><span class="fl">第{$data.dat_expect}期</span> <span class="fr">
+					<?php
+					echo date("H:i",$data["dat_open_time"]);
+                    $numarr = explode(",",$data["dat_codes"]);
+					?></span></div>
+					<div class="opennumber">
+						<span><?=$numarr[0]?></span>
+						<span><?=$numarr[1]?></span>
+						<span><?=$numarr[2]?></span>
+						<span><?=$numarr[3]?></span>
+						<span><?=$numarr[4]?></span>
+						<span><?=$numarr[5]?></span>
+						<span><?=$numarr[6]?></span>
+						<span><?=$numarr[7]?></span>
+						<span><?=$numarr[8]?></span>
+						<span><?=$numarr[9]?></span>
+					</div>
+				</li>
+			</volist>
+
+		</ul>
+
 			<h3><em></em>重庆时时彩开奖号码</h3>
 			<ul>
 			<volist name="list_cqssc" id="data">
@@ -110,6 +139,29 @@
                 </li>	
  </volist> 
  </ul>
+
+		<h3><em></em>極速时时彩开奖号码</h3>
+		<ul>
+			<volist name="list_jsssc" id="data">
+				<li>
+					<div class="openinfo"><span class="fl">第{$data.dat_expect}期</span> <span class="fr">
+					<?php
+					echo date("H:i",$data["dat_open_time"]);
+                    $numarr = explode(",",$data["dat_codes"]);
+					?>
+					</span></div>
+					<div class="opennumber">
+						<span><?=$numarr[0]?></span>
+						<span><?=$numarr[1]?></span>
+						<span><?=$numarr[2]?></span>
+						<span><?=$numarr[3]?></span>
+						<span><?=$numarr[4]?></span>
+
+					</div>
+				</li>
+			</volist>
+		</ul>
+
 			<h3><em></em>广东快乐十分开奖号码</h3>
 			<ul>
 			<volist name="list_gdkl10" id="data">
@@ -134,51 +186,51 @@
                 </li>	
  </volist> 
  </ul>
-			<h3><em></em>幸运农场开奖号码</h3>
-			<ul>
-			<volist name="list_xync" id="data">
-				<li>
-                    <div class="openinfo"><span class="fl">第{$data.dat_expect}期</span> <span class="fr">
-					<?php 
-					echo date("H:i",$data["dat_open_time"]);
-                    $numarr = explode(",",$data["dat_codes"]);
-					?>
-					</span></div>
-                    <div class="opennumber">
-                    	<span><?=$numarr[0]?></span>
-                    	<span><?=$numarr[1]?></span>
-                    	<span><?=$numarr[2]?></span>
-                    	<span><?=$numarr[3]?></span>
-                    	<span><?=$numarr[4]?></span>
-						<span><?=$numarr[5]?></span>
-                    	<span><?=$numarr[6]?></span>
-                    	<span><?=$numarr[7]?></span>
-                 
-                    </div>
-                </li>	
- </volist> 
- </ul>
-			<h3><em></em>新疆时时彩开奖号码</h3>
-			<ul>
-			<volist name="list_xjssc" id="data">
-				<li>
-                    <div class="openinfo"><span class="fl">第{$data.dat_expect}期</span> <span class="fr">
-					<?php 
-					echo date("H:i",$data["dat_open_time"]);
-                    $numarr = explode(",",$data["dat_codes"]);
-					?>
-					</span></div>
-                    <div class="opennumber">
-                    	<span><?=$numarr[0]?></span>
-                    	<span><?=$numarr[1]?></span>
-                    	<span><?=$numarr[2]?></span>
-                    	<span><?=$numarr[3]?></span>
-                    	<span><?=$numarr[4]?></span>
-                 
-                    </div>
-                </li>	
- </volist> 
- </ul>
+			<!--<h3><em></em>幸运农场开奖号码</h3>-->
+			<!--<ul>-->
+			<!--<volist name="list_xync" id="data">-->
+				<!--<li>-->
+                    <!--<div class="openinfo"><span class="fl">第{$data.dat_expect}期</span> <span class="fr">-->
+					<!--<?php -->
+					<!--echo date("H:i",$data["dat_open_time"]);-->
+                    <!--$numarr = explode(",",$data["dat_codes"]);-->
+					<!--?>-->
+					<!--</span></div>-->
+                    <!--<div class="opennumber">-->
+                    	<!--<span><?=$numarr[0]?></span>-->
+                    	<!--<span><?=$numarr[1]?></span>-->
+                    	<!--<span><?=$numarr[2]?></span>-->
+                    	<!--<span><?=$numarr[3]?></span>-->
+                    	<!--<span><?=$numarr[4]?></span>-->
+						<!--<span><?=$numarr[5]?></span>-->
+                    	<!--<span><?=$numarr[6]?></span>-->
+                    	<!--<span><?=$numarr[7]?></span>-->
+                 <!---->
+                    <!--</div>-->
+                <!--</li>	-->
+ <!--</volist> -->
+ <!--&lt;!&ndash;</ul>&ndash;&gt;-->
+			<!--<h3><em></em>新疆时时彩开奖号码</h3>-->
+			<!--<ul>-->
+			<!--<volist name="list_xjssc" id="data">-->
+				<!--<li>-->
+                    <!--<div class="openinfo"><span class="fl">第{$data.dat_expect}期</span> <span class="fr">-->
+					<!--<?php -->
+					<!--echo date("H:i",$data["dat_open_time"]);-->
+                    <!--$numarr = explode(",",$data["dat_codes"]);-->
+					<!--?>-->
+					<!--</span></div>-->
+                    <!--<div class="opennumber">-->
+                    	<!--<span><?=$numarr[0]?></span>-->
+                    	<!--<span><?=$numarr[1]?></span>-->
+                    	<!--<span><?=$numarr[2]?></span>-->
+                    	<!--<span><?=$numarr[3]?></span>-->
+                    	<!--<span><?=$numarr[4]?></span>-->
+                 <!---->
+                    <!--</div>-->
+                <!--</li>	-->
+ <!--</volist> -->
+ <!--</ul>-->
 			<h3><em></em>天津时时彩开奖号码</h3>
 			<ul>
 			<volist name="list_tjssc" id="data">
@@ -256,6 +308,12 @@
             
             <div class="title"><b id="bpk10-time"></b>秒后直播</div>
           </li>
+			<li>
+				<div class="pic"><a href="/jssc/shipin" target="_blank"> <img src="/style/images/pk10v.jpg"></a></div>
+
+				<div class="title"><b id="jssc-time"></b>秒后直播</div>
+			</li>
+
           <li>
             <div class="pic"><a href="/cqssc/shipin" target="_blank"><img src="/style/images/cqsscv.jpg"></a> 
             </div>
@@ -268,17 +326,17 @@
             
             <div class="title"><b id="bgdkl10-time"></b>秒后直播</div>
           </li>
+          <!--<li>-->
+            <!--<div class="pic"><a href="/xync/shipin" target="_blank"><img src="/style/images/xyncv.jpg"></a>-->
+            <!--</div>-->
+            <!---->
+            <!--<div class="title"><b id="bxync-time"></b>秒后直播</div>-->
+          <!--</li>-->
           <li>
-            <div class="pic"><a href="/xync/shipin" target="_blank"><img src="/style/images/xyncv.jpg"></a>
+            <div class="pic"><a href="/jsssc/shipin" target="_blank"><img src="/style/images/xjsscv.jpg"></a>
             </div>
             
-            <div class="title"><b id="bxync-time"></b>秒后直播</div>
-          </li>
-          <li>
-            <div class="pic"><a href="/xjssc/shipin" target="_blank"><img src="/style/images/xjsscv.jpg"></a>
-            </div>
-            
-            <div class="title"><b id="bxjssc-time"></b>秒后直播</div>
+            <div class="title"><b id="bjsssc-time"></b>秒后直播</div>
           </li>
           <li>
             <div class="pic"><a href="/tjssc/shipin" target="_blank"><img src="/style/images/tjsscv.jpg"></a>

@@ -173,7 +173,7 @@ jQuery(".nav-plus").slide({ type:"menu", titCell:".dropdown-nav", targetCell:".d
     <li><a href="kl8/" game="kl8">北京快乐8</a></li>
     <!--<li><a href="fc3d/" game="fc3d">福彩3d</a></li>-->
     <li><a href="pl3/" game="pl3">排列3</a></li>
-    <li><a href="xjssc/" game="xjssc">极速赛车</a></li>
+    <li><a href="jssc/" game="jssc">极速赛车</a></li>
     <li><a href="xjssc/" game="xjssc">重庆番摊</a></li>
     <li><a href="xjssc/" game="xjssc">北京番摊</a></li>
 </ul>

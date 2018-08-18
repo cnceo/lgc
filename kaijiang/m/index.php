@@ -203,13 +203,13 @@ $.cookie('home_cookiea', '1', { expires: 7 });
                 </a>
             </li>
             
-			<li class="kaij-mylist-li" id="xync">
-                <a href="xync/">
+			<li class="kaij-mylist-li" id="jssc">
+                <a href="jssc/">
                 <div class="kaij-mylist-l"><span class="ui-logo ui-logo-xync"></span></div>
                 <div class="kaij-mylist-r">
                     <div class="kaij-mylist-hd">
                         <div class="itm-time">下期开奖：<span id="time">载入中</span></div>
-	                    <div class="itm-tit">幸运农场<span class="itm-qih" id="qihao">载入中</span></div>
+	                    <div class="itm-tit">極速賽車<span class="itm-qih" id="qihao">载入中</span></div>
                     </div>
                     <div class="kaij-mylist-bd">
                         <div class="itm-result">
@@ -223,13 +223,13 @@ $.cookie('home_cookiea', '1', { expires: 7 });
                 </a>
             </li>
             
-				<li class="kaij-mylist-li" id="xjssc">
-                <a href="xjssc/">
+				<li class="kaij-mylist-li" id="jsssc">
+                <a href="jsssc/">
                 <div class="kaij-mylist-l"><span class="ui-logo ui-logo-xjssc"></span></div>
                 <div class="kaij-mylist-r">
                     <div class="kaij-mylist-hd">
                          <div class="itm-time">下期开奖：<span id="time">载入中</span></div>
-	                     <div class="itm-tit">新疆时时彩<span class="itm-qih" id="qihao">载入中</span></div>
+	                     <div class="itm-tit">極速时时彩<span class="itm-qih" id="qihao">载入中</span></div>
                     </div>
                     <div class="kaij-mylist-bd">
                         <div class="itm-result">
@@ -318,12 +318,12 @@ var pk10_number = -1;
 var pk10_downTimer = null;
 var gdkl10_number = -1;
 var gdkl10_downTimer = null;
-var xync_number = -1;
-var xync_downTimer = null;
+var jssc_number = -1;
+var jssc_downTimer = null;
 var gd11x5_number = -1;
 var gd11x5_downTimer = null;
-var xjssc_number = -1;
-var xjssc_downTimer = null;
+var jsssc_number = -1;
+var jsssc_downTimer = null;
 var tjssc_number = -1;
 var tjssc_downTimer = null;
 var jsk3_number = -1;
@@ -333,9 +333,9 @@ $(function() {
     CheckAward("pk10", "GetPk10AwardTimes", this.pk10_downTimer, pk10_number, "pk10");
     CheckAward("cqssc", "GetCqsscAwardTimes", this.cqssc_downTimer, cqssc_number, "cqssc");
     CheckAward("gdkl10", "GetGdkl10AwardTimes", this.gdkl10_downTimer, gdkl10_number, "gdkl10");
-    CheckAward("xync", "GetXyncAwardTimes", this.xync_downTimer, xync_number, "xync");
+    CheckAward("jssc", "GetPk10AwardTimes", this.jssc_downTimer, jssc_number, "jssc");
     CheckAward("gd11x5", "GetGd11x5AwardTimes", this.gd11x5_downTimer, gd11x5_number, "gd11x5");
-    CheckAward("xjssc", "GetXjsscAwardTimes", this.xjssc_downTimer, xjssc_number, "xjssc");
+    CheckAward("jsssc", "GetXjsscAwardTimes", this.jsssc_downTimer, jsssc_number, "jsssc");
     CheckAward("tjssc", "GetTjsscAwardTimes", this.tjssc_downTimer, tjssc_number, "tjssc");
     CheckAward("jsk3", "GetJsk3AwardTimes", this.jsk3_downTimer, jsk3_number, "jsk3"); 
     IndexOpen()
@@ -351,11 +351,11 @@ function showTime(page, timeSpan, time, qihao) {
         } else if (page == "gdkl10") {
             CheckAward("gdkl10", "GetGdkl10AwardTimes", this.gdkl10_downTimer, gdkl10_number, "gdkl10", qihao)
         } else if (page == "xync") {
-            CheckAward("xync", "GetXyncAwardTimes", this.xync_downTimer, xync_number, "xync", qihao)
+            CheckAward("jssc", "GetXyncAwardTimes", this.jssc_downTimer, jssc_number, "jssc", qihao)
         } else if (page == "gd11x5") {
             CheckAward("gd11x5", "GetGd11x5AwardTimes", this.gd11x5_downTimer, gd11x5_number, "gd11x5", qihao)
         } else if (page == "xjssc") {
-            CheckAward("xjssc", "GetXjsscAwardTimes", this.xjssc_downTimer, xjssc_number, "xjssc", qihao)
+            CheckAward("jsssc", "GetXjsscAwardTimes", this.jsssc_downTimer, jsssc_number, "jsssc", qihao)
         } else if (page == "tjssc") {
             CheckAward("tjssc", "GetTjsscAwardTimes", this.tjssc_downTimer, tjssc_number, "tjssc", qihao)
         } else if (page == "jsk3") {
@@ -420,13 +420,13 @@ function IndexOpen() {
             }
         }
         $("#gdkl10 #number").html(str);
-        $("#xync #qihao").text('第' + pad(data.xync.periodNumber, 3) + '期');
+        $("#jssc #qihao").text('第' + pad(data.xync.periodNumber, 3) + '期');
         var nums = data.xync.awardNumbers.split(',');
         var str = "";
         for (var i = 0; i < nums.length; i++) {
             str = str + "<i class='ball-red'>" + nums[i] + "</i>"
         }
-        $("#xync #number").html(str);
+        $("#jssc #number").html(str);
         $("#gd11x5 #qihao").text('第' + pad(data.gd11x5.periodNumber, 3) + '期');
         var nums = data.gd11x5.awardNumbers.split(',');
         var str = "";
@@ -434,13 +434,13 @@ function IndexOpen() {
             str = str + "<i class='ball-red'>" + nums[i] + "</i>"
         }
         $("#gd11x5 #number").html(str);
-        $("#xjssc #qihao").text('第' + pad(data.xjssc.periodNumber, 3) + '期');
+        $("#jsssc #qihao").text('第' + pad(data.xjssc.periodNumber, 3) + '期');
         var nums = data.xjssc.awardNumbers.split(',');
         var str = "";
         for (var i = 0; i < nums.length; i++) {
             str = str + "<i class='ball-red'>" + nums[i] + "</i>"
         }
-        $("#xjssc #number").html(str);
+        $("#jsssc #number").html(str);
         $("#tjssc #qihao").text('第' + data.tjssc.periodNumber + '期');
         var nums = data.tjssc.awardNumbers.split(',');
         var str = "";

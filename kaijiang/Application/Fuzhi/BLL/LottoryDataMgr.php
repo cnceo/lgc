@@ -120,6 +120,7 @@ class LottoryDataMgr
     {
         $ret = false;
         $lotType = $this->getLotTypeByType($type);
+
         $expire = 2;
         if ($page == 'getHistoryData.do') {
             $ret = $this->getHistoryData($type, $page, $lotType, $expire);
@@ -130,7 +131,7 @@ class LottoryDataMgr
                 if ($page == 'getPk10AwardData.do' || $page == 'getPk10AwardTimes.do' || $page == 'getCqsscAwardData.do' || $page == 'getCqsscAwardTimes.do' || $page == 'getGdkl10AwardData.do' || $page == 'getGdkl10AwardTimes.do' || $page == 'getJsk3AwardData.do' || $page == 'getJsk3AwardTimes.do' || $page == 'gettjsscAwardData.do' || $page == 'getxjsscAwardData.do' || $page == 'getfc3dAwardData.do'  || $page == 'getpl3AwardData.do' || $page == 'getgd11x5AwardData.do' || $page == 'gettjsscAwardTimes.do' || $page == 'getpl3AwardTimes.do' || $page == 'getfc3dcAwardTimes.do' || $page == 'getxjsscAwardTimes.do' || $page == 'getShsslAwardData.do' || $page == 'getShsslAwardTimes.do' || $page == 'getXyncAwardData.do' || $page == 'getXyncAwardTimes.do' || $page == 'getkl8AwardData.do' || $page == 'getkl8AwardTimes.do') {
 					//die("s");
                     $ret = $this->getAwardTime($type, $page, $lotType, $expire);
-					//var_dump($ret);die;
+				//	var_dump($ret);die;
                 } else {
                     if ($page == "GetPk10AnalysisData") {
                         $ret = $this->getPk10AnalysisData($type, $page, $lotType, $expire);
@@ -225,18 +226,22 @@ class LottoryDataMgr
                         if ($type == 'kl8') {
                             $ret = $this->getKl8Data($type, $page, $param);
                         } else {
-                            if ($type == 'xync') {
-                                $ret = $this->getXyncData($type, $page, $param);
+                            if ($type == 'jssc') {
+                                $ret = $this->getPk10Data($type, $page, $param);
                             } else {
-                                if ($type == 'missing') {
-                                    if ($page == "getMissingList.do") {
-                                        $ret = $this->getMissingList($type, $page, $param);
-                                    } else {
-                                        if ($page == "getLmcList.do") {
-                                            $ret = $this->getLmcList($type, $page, $param);
+                                if ($type == 'jsssc') {
+                                    $ret = $this->getcqsscData($type, $page, $param);
+                                }else{
+                                    if ($type == 'missing') {
+                                        if ($page == "getMissingList.do") {
+                                            $ret = $this->getMissingList($type, $page, $param);
                                         } else {
-                                            if ($page == "getTodayNum.do") {
-                                                $ret = $this->getTodayNum($type, $page, $param);
+                                            if ($page == "getLmcList.do") {
+                                                $ret = $this->getLmcList($type, $page, $param);
+                                            } else {
+                                                if ($page == "getTodayNum.do") {
+                                                    $ret = $this->getTodayNum($type, $page, $param);
+                                                }
                                             }
                                         }
                                     }
@@ -468,7 +473,8 @@ class LottoryDataMgr
         $kjHao = null;
         if (substr($page, -7) == "Data.do") {
             $kjHao = $module->query("select dat_codes,replace(dat_expect,'-','') dat_expect, dat_open_time from {$this->prename}data where dat_type={$lotType} order by dat_expect desc limit 1");
-			
+            //print_r($kjHao);exit;
+			//echo $module->getLastSql();
             $time = $kjHao[0]['dat_open_time'];
             $currentNo = $this->getGameCurrentNo($lotType, $module, $time);
 			//var_dump($currentNo);die;
@@ -506,6 +512,7 @@ class LottoryDataMgr
             }
         }
         $retData["time"] = $MillisecondTime;
+       // print_r($currentNo);exit;
         $retData["firstPeriod"] = $currentNo["actionNo"] - $currentNo["actionNoIndex"];
         $retData["apiVersion"] = 1;
         $retData["current"]["awardTime"] = $currentNo["actionTime"];
@@ -514,7 +521,7 @@ class LottoryDataMgr
         } else {
             $retData["current"]["periodNumber"] = $currentNo["actionNo"];
         }
-		//die($currentNo["actionNo"]);
+		//print_r($currentNo["actionNo"]);exit;
         $retData["current"]["fullPeriodNumber"] = $currentNo["actionNo"];
         $retData["current"]["periodNumberStr"] = null;
         $retData["current"]["awardTimeInterval"] = 0;
@@ -4669,8 +4676,8 @@ class LottoryDataMgr
                switch($type){
 				   case 'gdkl10':
 				   return 21;
-				   case 'xjssc':
-				   return 35;
+				   case 'jsssc':
+				   return 40;
 				   case 'xyft':
 				   return 34;
 				   case 'jsk3':
@@ -4681,8 +4688,8 @@ class LottoryDataMgr
 				   return 23;
 				   case 'shssl':
 				   return 24;
-				   case 'xync':
-				   return 18;
+				   case 'jssc':
+				   return 39;
 				   case 'gd11x5':
 				   return 6;
 				   case 'fc3d':
@@ -4893,15 +4900,19 @@ class LottoryDataMgr
     {
         $type = intval($type);
         $types = $this->getTypes($module);
+
         $kjTime = $types[$type]["data_ftime"];
         $atime = date('H:i:s', $time +$kjTime);
+
         $sql = "select actionNo, actionTime from {$this->prename}data_time where type={$type} and actionTime<='%s' order by actionTime desc limit 1";
-		//die($kjTime);
+
         $return = $module->query($sql, $atime);
+
 		//var_dump($return);die;
         if (!$return) {
             $sql = "select actionNo, actionTime from {$this->prename}data_time where type={$type} order by actionTime desc limit 1";
             $return = $module->query($sql);
+
             $time = $time - 24 * 3600;
         }
         $return = $return[0];
@@ -4909,7 +4920,7 @@ class LottoryDataMgr
         if (($fun = $types[$type]['onGetNoed']) && method_exists($this, $fun)) {
             $this->{$fun}($return['actionNo'], $return['actionTime'], $time);
         }
-		//die($fun);
+
         return $return;
     }
     public function getTypeFtime($type, $module)
