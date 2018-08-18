@@ -9,17 +9,17 @@
 		<title>看彩票开奖结果直播，彩票走势图，稳赚技巧方法,来168彩票开奖网，官方数据!精准无延迟！ </title>
 		<meta name="keywords" content="168彩票开奖结果,168彩票开奖直播,168彩票走势图,168彩票稳赚技巧,168彩票赚钱方法" />
 		<meta name="description " content="168彩票开奖网是彩种最全、开奖最快的专业彩票开奖网站。北京PK10、时时彩、极速赛车、双色球、大乐透…一应俱全！" />
-		<link rel="stylesheet" href="css/headorfood.css" />
-		<link rel="shortcut icon" href="/img/icon/168favicon.ico?v=201889947">
-		<link rel="stylesheet" href="css/index.css" />
-		<link rel="shortcut icon" href="/img/icon/168favicon.ico?v=201889947">
-		<link rel="stylesheet" href="css/user_adv.css" />
-		<link rel="stylesheet" href="css/idangerous.swiper.css" />
-		<script src="js/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
-		<script type="text/javascript" src="js/jquery.superslide.2.1.1.js"></script>
-		<script type="text/javascript" src="js/config.js"></script>
+		<link rel="stylesheet" href="/css/css/headorfood.css" />
+		<link rel="shortcut icon" href="/images/images/icon/168favicon.ico?v=201889947">
+		<link rel="stylesheet" href="/css/css/index.css" />
+		<link rel="shortcut icon" href="/images/images/icon/168favicon.ico?v=201889947">
+		<link rel="stylesheet" href="/css/css/user_adv.css" />
+		<link rel="stylesheet" href="/css/css/idangerous.swiper.css" />
+		<script src="/js/js/jquery.min.js"></script>
+		<script src="/js/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="/js/js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="/js/js/jquery.superslide.2.1.1.js"></script>
+		<script type="text/javascript" src="/js/js/config.js"></script>
 	</head>
 	<script>
 		tools.browserRedirect();
@@ -478,7 +478,7 @@
 		</div>
 	</div>
 </div>
-<script type="text/javascript" src="js/tools.js"></script>
+<script type="text/javascript" src="/js/js/tools.js"></script>
 <script>
 	$(function() {
 		//		tools.testWWW(); //判断去广告
@@ -3621,14 +3621,15 @@
 
 <div class="footer3">
 	<div class="footer3c">
-		Copyright <span id="localyears"></span> www.168kai.com All rights reserved 彩票开奖网 版权所有 粤ICP备09298233号<a style="display: inline;margin-left: 5px;" href="http://www.cnzz.com/stat/website.php?web_id=1261504940" target="_blank" title="站长统计">站长统计</a>
-		<script type="text/javascript" src="../..js/tools.js" ></script>
+		Copyright <span id="localyears"></span> www.168kai.com All rights reserved 彩票开奖网 版权所有 粤ICP备09298233号
+		<a style="display: inline;margin-left: 5px;" href="http://www.cnzz.com/stat/website.php?web_id=1261504940" target="_blank" title="站长统计">站长统计</a>
+		<script type="text/javascript" src="/js/js/tools.js" ></script>
 		<script type="text/javascript">
 			$("#localyears").text(new Date().getFullYear());
 			toolBoxs.setK();//为开奖调用增加域名
 			var logoLocation = window.location.href.indexOf("zsh/index"); //如果是站长推荐页面，就修改底部的彩种logo图片
 			if(logoLocation !== -1){
-				$(".lileft").find("img").attr("src","../../img/zshImage/logoBottom.png?v=201889947");
+				$(".lileft").find("img").attr("src","../../images/images/zshImage/logoBottom.png?v=201889947");
 			}
 		</script>
 	</div>
@@ -3719,12 +3720,12 @@
 		</div>
 
 	</body>
-	<script type="text/javascript" src="js/ga.js"></script>
-	<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
-	<script type="text/javascript" src="js/pk10_index.js"></script>
-	<script type="text/javascript" src="js/animate.js"></script>
-	<script type="text/javascript" src="js/index.js"></script>
-	<script src="js/idangerous.swiper.min.js"></script>
+	<script type="text/javascript" src="/js/js/ga.js"></script>
+	<script type="text/javascript" src="/js/js/jquery.flexslider-min.js"></script>
+	<script type="text/javascript" src="/js/js/pk10_index.js"></script>
+	<script type="text/javascript" src="/js/js/animate.js"></script>
+	<script type="text/javascript" src="/js/js/index.js"></script>
+	<script src="/js/js/idangerous.swiper.min.js"></script>
 	<script>
 		indexObj.loadBanner();
 	</script>
