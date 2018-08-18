@@ -21,6 +21,8 @@
 		<script type="text/javascript" src="/js/js/jquery.superslide.2.1.1.js"></script>
 		<script type="text/javascript" src="/js/js/config.js"></script>
 	</head>
+
+
 	<script>
 		tools.browserRedirect();
 	</script>
@@ -99,9 +101,12 @@
 	<div class="headboxh2">
 		<div class="headbox">
 			<div>
-				<a class="logobox" href="/" alt="168彩票开奖网"></a>
+				<a class="logobox" href="/"  style="width: 305px;margin-left: -5px">
+					<img src="/style/images/logo.gif" height="90px">
+				</a>
 			</div>
-			<div class="advertisebox" id="advertisebox">
+			<div class="advertisebox" style="width: 700px">
+				<img src="/style/images/yz.png">
 			</div>
 			<div class="loginbox">
 				<ul>
@@ -110,7 +115,7 @@
 					<li class="logonli jianyue">
 						<!--<a href="/view/public/jianyue.html?v=201889947">简约版</a>-->
 						<div class="new_mobiledetail">
-							<img src="picture/168phone.png" alt="" />
+							<img src="/style/images/m.jpg" alt="" />
 							<p class="sweep">扫一扫，下载移动客户端</p>
 							<p class="remind">（IOS、Android均可扫码下载）</p>
 						</div>
@@ -585,9 +590,64 @@
 
 								<div class="kair">
 									<div class="announce_top">
-										<div id="littleimg" class="home_littleimg">
-											<img src="picture/default.gif" style="width:490px;height: auto;float: left;"/>
+										<style>
+											.banner ul, ol { padding: 0;}
+											.banner { position: relative; overflow: auto; text-align: center;overflow-y: hidden; overflow-x: hidden; 	}
+											.banner li { list-style: none; }
+											.banner ul li { float: left; }
+											#b04 { width: 520px;}
+											#b04 .dots { position: absolute; left: 0; right: 0; bottom: 20px;}
+											#b04 .dots li
+											{
+												display: inline-block;
+												width: 10px;
+												height: 10px;
+												margin: 0 4px;
+												text-indent: -999em;
+												border: 2px solid #fff;
+												border-radius: 6px;
+												cursor: pointer;
+												opacity: .4;
+												-webkit-transition: background .5s, opacity .5s;
+												-moz-transition: background .5s, opacity .5s;
+												transition: background .5s, opacity .5s;
+											}
+											#b04 .dots li.active
+											{
+												background: #fff;
+												opacity: 1;
+											}
+											#b04 .arrow { position: absolute; top: 150px;}
+											#b04 #al { left: 15px;}
+											#b04 #ar { right: 15px;}
+										</style>
+										<div id="video_list" style="width: 523px">
+											<div class="banner" id="b04">
+												<ul>
+													<li><img src="/images/cqssc-index.png.jpg" alt="" width="520" height="300" ></li>
+													<li><img src="/images/gdkl10-index.png.jpg" alt="" width="520" height="300" ></li>
+													<li><img src="/images/fc3d-index.png.jpg" alt="" width="520" height="300" ></li>
+													<li><img src="/images/jxssc-index.png.jpg" alt="" width="520" height="300" ></li>
+													<li><img src="/images/kl8-index.png.jpg" alt="" width="520" height="300" ></li>
+												</ul>
+												<a href="javascript:void(0);" class="unslider-arrow04 prev"><img class="arrow" id="al" src="/js/js/unslider/arrowl.png" alt="prev" width="20" height="35"></a>
+												<a href="javascript:void(0);" class="unslider-arrow04 next"><img class="arrow" id="ar" src="/js/js/unslider/arrowr.png" alt="next" width="20" height="37"></a>
+											</div>
 										</div>
+										<script type="text/javascript" src="/js/js/unslider/unslider.min.js"></script>
+										<script>
+											$(document).ready(function(e) {
+												var unslider04 = $('#b04').unslider({
+															dots: true
+														}),
+														data04 = unslider04.data('unslider');
+
+												$('.unslider-arrow04').click(function() {
+													var fn = this.className.split(' ')[1];
+													data04[fn]();
+												});
+											});
+										</script>
 										<div class="announce_middle">
 											<h1><span class="newAnn">行业新闻</span><span class="more"><a href="#">更多</a></span></h1>
 											<div class="margin_top" id="bannernews">
