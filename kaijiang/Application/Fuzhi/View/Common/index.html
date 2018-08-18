@@ -2528,7 +2528,7 @@
 										</p>
 										<div class="user_score">
 											<ul>
-												<!--<li>
+												<li>
 													<div class="head_div">
 														<img src="picture/headicon_2.png" alt="" />
 														<span>狂神杀号</span>
@@ -2538,7 +2538,7 @@
 														<p>近10期成功率： <span class="clo_red">80%</span></p>
 														<p>历史战绩： <span>80%</span></p>
 													</div>
-												</li>-->
+												</li>
 
 											</ul>
 										</div>
@@ -3626,7 +3626,9 @@
 			<div class="footer1">
 	<ul>
 		<li class="lileft">
-			<img src="picture/logobot.png"  alt="168彩票开奖网"/>
+			<div style="width: 100px;height: 60px">
+			<img src="/style/images/logo.gif"  width="100" height="60">
+			</div>
 			<p>最专业的彩票开奖网站</p>
 			<p>数据分析最全面的开奖数据平台 </p>
 		</li>
