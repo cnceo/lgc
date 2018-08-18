@@ -15,11 +15,11 @@ $.getJSON("/pk10/getPk10AwardTimes.do",
  function(data){
  timers(parseInt((data.next.awardTimeInterval)/1000),"bgdkl10-time");
  });
- $.getJSON("/xync/getPk10AwardTimes.do",
+ $.getJSON("/jssc/getPk10AwardTimes.do",
  function(data){
  timers(parseInt((data.next.awardTimeInterval)/1000),"bxync-time");
  });
- $.getJSON("/xjssc/getPk10AwardTimes.do",
+ $.getJSON("/jsssc/getPk10AwardTimes.do",
  function(data){
  timers(parseInt((data.next.awardTimeInterval)/1000),"bxjssc-time");
  });
